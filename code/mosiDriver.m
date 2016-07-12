@@ -3,17 +3,18 @@ clear
 clc
 close all
 %% import temp station locations for Argentina
-filename = 'Argentina_2015.xlsx';
+filename = [ 'combined_data' filesep 'SouthAmerica.xlsx'];
 delimiterIn = '\t'; % if it's the tab deliminated text file
 headerlinesIn = 1;
 
 % get a structure with headers and text
 % importdata looks at file extensions and imports accordingly
+
 T = importdata(filename,delimiterIn,headerlinesIn); 
 
 %% extract locations and elevation of temp stations
 
-data = T.data;
+xyzdata = T.data;
 data = data(:,1:3);
 data = unique(data,'rows');
 
