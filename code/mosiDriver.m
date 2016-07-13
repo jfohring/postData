@@ -41,13 +41,14 @@ Blong = xyz(1:ind,3);
 
 %% playing with maps
 figure(1);clf
-worldmap world
-load coastlines
+ax = worldmap('South America');
+
+borders 
+hold on
+borders('argentina','FaceColor', [0.5 0.7 0.5])
 
 % marker area
 a = 5;
-
-plotm(coastlat, coastlon),hold on
 scatterm(Alat,Along,a,'filled','y')
 scatterm(Blat,Blong,a,'filled','b')
 scatterm(Tlat,Tlong,a,'filled','r')
