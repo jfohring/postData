@@ -12,7 +12,7 @@ headerlinesIn = 1;
 
 T = importdata(filename,delimiterIn,headerlinesIn); 
 
-%% extract locations and elevation of temp stations
+%% extract locations of temp stations
 xyz = T.data.Sheet1(:,1:3);
 
 % for plotting only station locations,
@@ -40,21 +40,25 @@ Blong = xyz(1:ind,3);
 
 
 %% playing with maps
+figure(1);clf
 worldmap world
 load coastlines
 
+% marker area
+a = 5;
 
-plotm(coastlat, coastlon)
-hold on, scatterm(Alat,Along,'filled','r')
-
+plotm(coastlat, coastlon),hold on
+scatterm(Alat,Along,a,'filled','y')
+scatterm(Blat,Blong,a,'filled','b')
+scatterm(Tlat,Tlong,a,'filled','r')
+% legend('','aegypti','albo','temp stations','location','southeast')
 
 
 %% plot both mosi locations and station locations on map
-figure(1);clf
+figure(2);clf
 %  worldmap 'south america'
 
-% geoshow('landareas.shp','FaceColor',[0.5 0.7 0.5])
-geoshow('cntry02.shp','FaceColor',[0.5 0.7 0.5])
+ geoshow('landareas.shp','FaceColor',[0.5 0.7 0.5])
 % geoshow('worldrivers.shp','Color', 'blue')
 % geoshow('worldcities.shp','Marker','.','Color','red')
 
