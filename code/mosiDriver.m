@@ -3,7 +3,7 @@ clear
 clc
 close all
 %% import temp station locations for Argentina
-filename = [ 'combined_data' filesep 'SouthAmerica.xlsx'];
+filename = 'Argentina.xlsx';
 delimiterIn = '\t'; % if it's the tab deliminated text file
 headerlinesIn = 1;
 
@@ -40,12 +40,21 @@ Blong = xyz(1:ind,3);
 
 
 %% playing with maps
+worldmap world
+load coastlines
+
+
+plotm(coastlat, coastlon)
+hold on, scatterm(Alat,Along,'filled','r')
+
+
 
 %% plot both mosi locations and station locations on map
 figure(1);clf
 %  worldmap 'south america'
 
-geoshow('landareas.shp','FaceColor',[0.5 0.7 0.5])
+% geoshow('landareas.shp','FaceColor',[0.5 0.7 0.5])
+geoshow('cntry02.shp','FaceColor',[0.5 0.7 0.5])
 % geoshow('worldrivers.shp','Color', 'blue')
 % geoshow('worldcities.shp','Marker','.','Color','red')
 
