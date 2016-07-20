@@ -52,53 +52,53 @@ AdminLevel	ID_GAUL	Label	Admin0_name	Admin1_name	Admin2_name	Lat	Long 	elevation
 1	929	Yunnan Sheng	China	Yunnan Sheng	not applicable	24.34711047	101.3916426	1594	Sporadic or uncertain risk		567					20												
 1	930	Zhejiang	China	Zhejiang	not applicable	29.29485644	120.3285733	84	Sporadic or uncertain risk											83								
 0	57	Colombia	Colombia	not applicable	not applicable	4.570868	-74.297333	2512	Frequent or continuous risk	53324	119856	729	17488	112802														
-0	58	Comoros	Comoros	not applicable	not applicable				Sporadic or uncertain risk					10														
-0	59	Congo	Congo	not applicable	not applicable				Sporadic or uncertain risk	1																		
-0	68	Congo (Democratic republic of)	Congo (Democratic republic of)	not applicable	not applicable				Sporadic or uncertain risk															1				
-0	60	Cook islands	Cook islands	not applicable	not applicable				Frequent or continuous risk	50					170		60	170				1000						
-0	61	Costa Rica	Costa Rica	not applicable	not applicable				Frequent or continuous risk	3648	49868	22243	13854	31773														
-0	66	Cote d'Ivoire	Cote d'Ivoire	not applicable	not applicable				Sporadic or uncertain risk							8	3	1										
-1	989	Dubrovnik-neretva	Croatia	Dubrovnik-neretva	not applicable				Sporadic or uncertain risk																			
-0	63	Cuba	Cuba	not applicable	not applicable				Frequent or continuous risk	3500	1430				70		28		75									
-0	70	Djibouti	Djibouti	not applicable	not applicable				Sporadic or uncertain risk							2		4	1		123	5		6	28			
-0	71	Dominica 	Dominica 	not applicable	not applicable				Frequent or continuous risk	23	141	29	40	635														
-0	72	Dominican Republic	Dominican Republic	not applicable	not applicable				Frequent or continuous risk	3245	16658	9685	2339	11519														
-0	894	Easter Island	Easter Island	not applicable	not applicable				Frequent or continuous risk							25	27					132						
-0	73	Ecuador	Ecuador	not applicable	not applicable				Frequent or continuous risk	500	11662	14000		3985	42													
-0	40765	Egypt	Egypt	not applicable	not applicable				Sporadic or uncertain risk					2														
-0	75	El Salvador	El Salvador	not applicable	not applicable				Frequent or continuous risk	15319	28877	41793	20836	22406														
-0	76	Equatorial Guinea	Equatorial Guinea	not applicable	not applicable				Sporadic or uncertain risk							1												
-0	77	Eritrea	Eritrea	not applicable	not applicable				Sporadic or uncertain risk					2														
-0	79	Ethiopia	Ethiopia	not applicable	not applicable				Sporadic or uncertain risk	704																		
-0	83	Fiji	Fiji	not applicable	not applicable				Frequent or continuous risk	25300	60	323	12		68													
-2	16321	Alpes-maritimes	France	Provence-Alpes-Cote-d'Azur	Alpes-maritimes				Sporadic or uncertain risk																			
-2	16322	Bouches-du-Rhone	France	Provence-Alpes-Cote-d'Azur	Bouches-du-Rhone				Sporadic or uncertain risk																			
-0	86	French Guiana	French Guiana	not applicable	not applicable				Frequent or continuous risk	1180	16263	1372	667	4350														
-0	87	French Polynesia	French Polynesia	not applicable	not applicable				Frequent or continuous risk		1326				2531		10	400					30000					
-0	89	Gabon	Gabon	not applicable	not applicable				Sporadic or uncertain risk					99														
-0	1143	Galapagos	Galapagos	not applicable	not applicable				Sporadic or uncertain risk			76		32								215						
-0	90	Gambia	Gambia	not applicable	not applicable				Sporadic or uncertain risk													1						
-0	94	Ghana	Ghana	not applicable	not applicable				Sporadic or uncertain risk							464												
-0	99	Grenada	Grenada	not applicable	not applicable				Frequent or continuous risk		155	75	87	125	23													
-0	100	Guadeloupe	Guadeloupe	not applicable	not applicable				Frequent or continuous risk	664	12706	1032	101	41100														
-0	103	Guatemala	Guatemala	not applicable	not applicable				Frequent or continuous risk	2668	11860	9547	2565	17045														
-0	106	Guinea  	Guinea  	not applicable	not applicable				Sporadic or uncertain risk									1										
-0	105	Guinea-Bissau	Guinea-Bissau	not applicable	not applicable				Sporadic or uncertain risk						1													
-0	107	Guyana	Guyana	not applicable	not applicable				Frequent or continuous risk		189			8100	665	300	11											
-0	108	Haiti	Haiti	not applicable	not applicable				Frequent or continuous risk			240																
-0	111	Honduras	Honduras	not applicable	not applicable				Frequent or continuous risk	6420	39271	15554	8297	66814														
-0	33364	Hong Kong	Hong Kong	not applicable	not applicable				Sporadic or uncertain risk					1				1										
-1	1484	Andaman and Nicobar	India	Andaman and Nicobar	not applicable				Sporadic or uncertain risk																			
-1	1485	Andhra Pradesh	India	Andhra Pradesh	not applicable				Frequent or continuous risk		68	206	672	50				97										
-1	70036	Arunachal Pradesh	India	Arunachal Pradesh	not applicable				Sporadic or uncertain risk			4																
-1	70037	Arunachal Pradesh	India	Arunachal Pradesh	not applicable				Sporadic or uncertain risk			4																
-1	70072	Arunachal Pradesh	India	Arunachal Pradesh	not applicable				Sporadic or uncertain risk			4																
-1	1487	Assam	India	Assam	not applicable				Frequent or continuous risk		350	1051		117		28												
-1	70073	Bihar	India	Bihar	not applicable				Frequent or continuous risk			1000	21	524				12										
-1	70075	Chhattisgarh	India	Chhattisgarh	not applicable				Sporadic or uncertain risk			53	43															
-1	1489	Delhi	India	Delhi	not applicable				Frequent or continuous risk		5546	1980	1108	6190	1106													
-1	1490	Goa	India	Goa	not applicable				Frequent or continuous risk	30	109		21	237	49													
-1	1491	Gujarat	India	Gujarat	not applicable				Frequent or continuous risk		223	640	1327					475	33									
+0	58	Comoros	Comoros	not applicable	not applicable	-11.6455	43.3333	127	Sporadic or uncertain risk					10														
+0	59	Congo	Congo	not applicable	not applicable	-2.23935257	22.90124212	438	Sporadic or uncertain risk	1																		
+0	68	Congo (Democratic republic of)	Congo (Democratic republic of)	not applicable	not applicable	-2.23935257	22.90124212	438	Sporadic or uncertain risk															1				
+0	60	Cook islands	Cook islands	not applicable	not applicable	-21.236736	-159.777671	7	Frequent or continuous risk	50					170		60	170				1000						
+0	61	Costa Rica	Costa Rica	not applicable	not applicable	9.96539974	-84.05005886	1225	Frequent or continuous risk	3648	49868	22243	13854	31773														
+0	66	Cote d'Ivoire	Cote d'Ivoire	not applicable	not applicable	7.539989	-5.54708	240	Sporadic or uncertain risk							8	3	1										
+1	989	Dubrovnik-neretva	Croatia	Dubrovnik-neretva	not applicable	42.6506606	18.0944238	35	Sporadic or uncertain risk																			
+0	63	Cuba	Cuba	not applicable	not applicable	21.521757	-77.781167	72	Frequent or continuous risk	3500	1430				70		28		75									
+0	70	Djibouti	Djibouti	not applicable	not applicable	11.825138	42.590275	1293	Sporadic or uncertain risk							2		4	1		123	5		6	28			
+0	71	Dominica 	Dominica 	not applicable	not applicable	15.414999	-61.370976	292	Frequent or continuous risk	23	141	29	40	635														
+0	72	Dominican Republic	Dominican Republic	not applicable	not applicable	18.735693	-70.162651	874	Frequent or continuous risk	3245	16658	9685	2339	11519														
+0	894	Easter Island	Easter Island	not applicable	not applicable	-27.11299	-109.3495806	185	Frequent or continuous risk							25	27					132						
+0	73	Ecuador	Ecuador	not applicable	not applicable	-1.34802803	-78.62285912	2940	Frequent or continuous risk	500	11662	14000		3985	42													
+0	40765	Egypt	Egypt	not applicable	not applicable	26.820553	30.802498	289	Sporadic or uncertain risk					2														
+0	75	El Salvador	El Salvador	not applicable	not applicable	13.794185	-88.89653	632	Frequent or continuous risk	15319	28877	41793	20836	22406														
+0	76	Equatorial Guinea	Equatorial Guinea	not applicable	not applicable	1.650801	10.267895	943	Sporadic or uncertain risk							1												
+0	77	Eritrea	Eritrea	not applicable	not applicable	15.51840636	38.81553712	2191	Sporadic or uncertain risk					2														
+0	79	Ethiopia	Ethiopia	not applicable	not applicable	9.145	40.489673	1256	Sporadic or uncertain risk	704																		
+0	83	Fiji	Fiji	not applicable	not applicable	-17.713371	178.065032	344	Frequent or continuous risk	25300	60	323	12		68													
+2	16321	Alpes-maritimes	France	Provence-Alpes-Cote-d'Azur	Alpes-maritimes	43.9466791	7.179026	442	Sporadic or uncertain risk																			
+2	16322	Bouches-du-Rhone	France	Provence-Alpes-Cote-d'Azur	Bouches-du-Rhone	43.5911679	5.3102505	228	Sporadic or uncertain risk																			
+0	86	French Guiana	French Guiana	not applicable	not applicable	4.17498314	-53.08183669	151	Frequent or continuous risk	1180	16263	1372	667	4350														
+0	87	French Polynesia	French Polynesia	not applicable	not applicable	-17.679742	-149.406843	816	Frequent or continuous risk		1326				2531		10	400					30000					
+0	89	Gabon	Gabon	not applicable	not applicable	-0.803689	11.609444	532	Sporadic or uncertain risk					99														
+0	1143	Galapagos	Galapagos	not applicable	not applicable	-0.6518973	-90.4056338	429	Sporadic or uncertain risk			76		32								215						
+0	90	Gambia	Gambia	not applicable	not applicable	13.443182	-15.310139	11	Sporadic or uncertain risk													1						
+0	94	Ghana	Ghana	not applicable	not applicable	7.946527	-1.023194	125	Sporadic or uncertain risk							464												
+0	99	Grenada	Grenada	not applicable	not applicable	12.1165	-61.679	223	Frequent or continuous risk		155	75	87	125	23													
+0	100	Guadeloupe	Guadeloupe	not applicable	not applicable	16.265	-61.551	5	Frequent or continuous risk	664	12706	1032	101	41100														
+0	103	Guatemala	Guatemala	not applicable	not applicable	15.783471	-90.230759	374	Frequent or continuous risk	2668	11860	9547	2565	17045														
+0	106	Guinea  	Guinea  	not applicable	not applicable	9.945587	-9.696645	415	Sporadic or uncertain risk									1										
+0	105	Guinea-Bissau	Guinea-Bissau	not applicable	not applicable	11.803749	-15.180413	15	Sporadic or uncertain risk						1													
+0	107	Guyana	Guyana	not applicable	not applicable	4.860416	-58.93018	311	Frequent or continuous risk		189			8100	665	300	11											
+0	108	Haiti	Haiti	not applicable	not applicable	18.75286359	-72.30169449	704	Frequent or continuous risk			240																
+0	111	Honduras	Honduras	not applicable	not applicable	15.63422866	-87.82393625	12	Frequent or continuous risk	6420	39271	15554	8297	66814														
+0	33364	Hong Kong	Hong Kong	not applicable	not applicable	22.396428	114.109497	321	Sporadic or uncertain risk					1				1										
+1	1484	Andaman and Nicobar	India	Andaman and Nicobar	not applicable	11.7400867	92.6586401	86	Sporadic or uncertain risk																			
+1	1485	Andhra Pradesh	India	Andhra Pradesh	not applicable	15.00226278	79.21264375	197	Frequent or continuous risk		68	206	672	50				97										
+1	70036	Arunachal Pradesh	India	Arunachal Pradesh	not applicable	28.50802329	94.96945202	2172	Sporadic or uncertain risk			4																
+1	70037	Arunachal Pradesh	India	Arunachal Pradesh	not applicable	28.50802329	94.96945202	2172	Sporadic or uncertain risk			4																
+1	70072	Arunachal Pradesh	India	Arunachal Pradesh	not applicable	28.50802329	94.96945202	2172	Sporadic or uncertain risk			4																
+1	1487	Assam	India	Assam	not applicable	26.54510491	92.68488835	57	Frequent or continuous risk		350	1051		117		28												
+1	70073	Bihar	India	Bihar	not applicable	25.70146091	86.17005299	45	Frequent or continuous risk			1000	21	524				12										
+1	70075	Chhattisgarh	India	Chhattisgarh	not applicable	21.2786567	81.8661442	279	Sporadic or uncertain risk			53	43															
+1	1489	Delhi	India	Delhi	not applicable	28.76186067	77.15742184	210	Frequent or continuous risk		5546	1980	1108	6190	1106													
+1	1490	Goa	India	Goa	not applicable	15.2993265	74.123996	104	Frequent or continuous risk	30	109		21	237	49													
+1	1491	Gujarat	India	Gujarat	not applicable	22.258652	71.1923805	293	Frequent or continuous risk		223	640	1327					475	33									
 1	1492	Haryana 	India	Haryana 	not applicable				Frequent or continuous risk		755	720	27			738		395										
 1	1493	Himachal Pradesh	India	Himachal Pradesh	not applicable				Sporadic or uncertain risk										2									
 1	40422	Jammu and Kashmir	India	Jammu and Kashmir	not applicable				Sporadic or uncertain risk		600																	
