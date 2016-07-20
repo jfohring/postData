@@ -14,44 +14,44 @@ AdminLevel	ID_GAUL	Label	Admin0_name	Admin1_name	Admin2_name	Lat	Long 	elevation
 1	437	Formosa	Argentina	Formosa	not applicable	-26.1857768	-58.1755669	66	Frequent or continuous risk			14					187	6		105								
 1	438	Jujuy	Argentina	Jujuy	not applicable	-24.1843397	-65.302177	1275	Sporadic or uncertain risk		26									66								
 1	442	Misiones	Argentina	Misiones	not applicable	-27.4269255	-55.9467076	143	Frequent or continuous risk		53			872	39		186	106										
-1	445	Salta	Argentina	Salta	not applicable				Frequent or continuous risk		198	50	19		2516		126											
-1	449	Santa Fe	Argentina	Santa Fe	not applicable				Frequent or continuous risk				169	20	650													
-1	450	Santiago del Estero	Argentina	Santiago del Estero	not applicable				Sporadic or uncertain risk					70	413													
-1	452	Tucuman	Argentina	Tucuman	not applicable				Sporadic or uncertain risk						1742													
-0	14	Aruba	Aruba	not applicable	not applicable				Frequent or continuous risk		1020	667	3027	1415	845													
-2	154657	Cairns	Austrailia	Queensland	Cairns				Frequent or continuous risk	70	77		11	19	935													
-2	154659	Cassowary Coast	Austrailia	Queensland	Cassowary Coast				Sporadic or uncertain risk				47	4														
-2	154661	Charters Towers	Austrailia	Queensland	Charters Towers				Sporadic or uncertain risk	18																		
-2	5173	Douglas	Austrailia	Queensland	Douglas				Sporadic or uncertain risk	17					2	22												
-2	154696	Torres	Austrailia	Queensland	Torres				Sporadic or uncertain risk										11	278								
-2	154698	Townsville	Austrailia	Queensland	Townsville				Frequent or continuous risk	15		3	11	28	12		45											
-0	20	Bahamas	Bahamas	not applicable	not applicable				Sporadic or uncertain risk				7000															
-0	23	Bangladesh	Bangladesh	not applicable	not applicable				Frequent or continuous risk		500		473		405	27		1423										
-0	24	Barbados	Barbados	not applicable	not applicable				Frequent or continuous risk		2848	1445	745	2917	55													
-0	28	Belize	Belize	not applicable	not applicable				Frequent or continuous risk		2690	1948	469	2178	1457													
-0	29	Benin	Benin	not applicable	not applicable				Sporadic or uncertain risk					2														
-0	31	Bhutan	Bhutan	not applicable	not applicable				Frequent or continuous risk				712	887	32		500	31		1393								
-0	33	Bolivia	Bolivia	not applicable	not applicable				Frequent or continuous risk	1800	12202	5348	26019		59900													
-0	37	Brazil	Brazil	not applicable	not applicable				Frequent or continuous risk	99638	1451432	565510	700000	936260														
-0	39	British Virgin Islands	British Virgin Islands	not applicable	not applicable				Frequent or continuous risk	13	126	214	939		65													
-0	40	Brunei	Brunei	not applicable	not applicable				Frequent or continuous risk		349			77	37			65	18									
-0	42	Burkina Faso	Burkina Faso	not applicable	not applicable				Sporadic or uncertain risk		33						3	1										
-0	43	Burundi	Burundi	not applicable	not applicable				Sporadic or uncertain risk	1																		
-0	44	Cambodia	Cambodia	not applicable	not applicable				Frequent or continuous risk	1005	15193	36958	12392	1111														
-0	45	Cameroon	Cameroon	not applicable	not applicable				Sporadic or uncertain risk					1														
-0	47	Cape Verde	Cape Verde	not applicable	not applicable				Sporadic or uncertain risk						17000													
-0	48	Cayman Islands	Cayman Islands	not applicable	not applicable				Frequent or continuous risk		69	53					10											
-0	49	Central African Republic	Central African Republic	not applicable	not applicable				Sporadic or uncertain risk																	1		
-0	50	Chad	Chad	not applicable	not applicable				Sporadic or uncertain risk											2								
-1	901	Fujian	China	Fujian	not applicable				Sporadic or uncertain risk								39			100								
-1	903	Guangdong	China	Guangdong	not applicable				Frequent or continuous risk		108	97		21			25	492										
-1	904	Guangxi	China	Guangxi	not applicable				Sporadic or uncertain risk														1					
-1	906	Hainan	China	Hainan	not applicable				Sporadic or uncertain risk																			114107
-1	304	Jammu and Kashmir	China	Jammu and Kashmir	not applicable				Sporadic or uncertain risk		600																	
-1	925	Taiwan	China	Taiwan	not applicable				Frequent or continuous risk	172	214	161	457	1216														
-1	929	Yunnan Sheng	China	Yunnan Sheng	not applicable				Sporadic or uncertain risk		567					20												
-1	930	Zhejiang	China	Zhejiang	not applicable				Sporadic or uncertain risk											83								
-0	57	Colombia	Colombia	not applicable	not applicable				Frequent or continuous risk	53324	119856	729	17488	112802														
+1	445	Salta	Argentina	Salta	not applicable	-24.7821269	-65.4231976	1188	Frequent or continuous risk		198	50	19		2516		126											
+1	449	Santa Fe	Argentina	Santa Fe	not applicable	-31.6106578	-60.697294	20	Frequent or continuous risk				169	20	650													
+1	450	Santiago del Estero	Argentina	Santiago del Estero	not applicable	-27.7833574	-64.264167	191	Sporadic or uncertain risk					70	413													
+1	452	Tucuman	Argentina	Tucuman	not applicable	-26.8221127	-65.2192903	453	Sporadic or uncertain risk						1742													
+0	14	Aruba	Aruba	not applicable	not applicable	12.52111	-69.968338	66	Frequent or continuous risk		1020	667	3027	1415	845													
+2	154657	Cairns	Austrailia	Queensland	Cairns	-16.9185514	145.7780548	0	Frequent or continuous risk	70	77		11	19	935													
+2	154659	Cassowary Coast	Austrailia	Queensland	Cassowary Coast	-17.9678541	145.9651126	40	Sporadic or uncertain risk				47	4														
+2	154661	Charters Towers	Austrailia	Queensland	Charters Towers	-20.0769637	146.2601362	317	Sporadic or uncertain risk	18																		
+2	5173	Douglas	Austrailia	Queensland	Douglas	-19.3222235	146.7580578	26	Sporadic or uncertain risk	17					2	22												
+2	154696	Torres	Austrailia	Queensland	Torres	-10.1762821	142.2974988	39	Sporadic or uncertain risk										11	278								
+2	154698	Townsville	Austrailia	Queensland	Townsville	-19.2589635	146.8169483	15	Frequent or continuous risk	15		3	11	28	12		45											
+0	20	Bahamas	Bahamas	not applicable	not applicable	25.03428	-77.39628	9	Sporadic or uncertain risk				7000															
+0	23	Bangladesh	Bangladesh	not applicable	not applicable	23.684994	90.356331	6	Frequent or continuous risk		500		473		405	27		1423										
+0	24	Barbados	Barbados	not applicable	not applicable	13.193887	-59.543198	322	Frequent or continuous risk		2848	1445	745	2917	55													
+0	28	Belize	Belize	not applicable	not applicable	17.189877	-88.49765	56	Frequent or continuous risk		2690	1948	469	2178	1457													
+0	29	Benin	Benin	not applicable	not applicable	9.30769	2.315834	320	Sporadic or uncertain risk					2														
+0	31	Bhutan	Bhutan	not applicable	not applicable	27.514162	90.433601	2539	Frequent or continuous risk				712	887	32		500	31		1393								
+0	33	Bolivia	Bolivia	not applicable	not applicable	-17.23315341	-64.35351536	241	Frequent or continuous risk	1800	12202	5348	26019		59900													
+0	37	Brazil	Brazil	not applicable	not applicable	-14.235004	-51.92528	259	Frequent or continuous risk	99638	1451432	565510	700000	936260														
+0	39	British Virgin Islands	British Virgin Islands	not applicable	not applicable	18.420695	-64.639968	295	Frequent or continuous risk	13	126	214	939		65													
+0	40	Brunei	Brunei	not applicable	not applicable	4.535277	114.727669	58	Frequent or continuous risk		349			77	37			65	18									
+0	42	Burkina Faso	Burkina Faso	not applicable	not applicable	12.238333	-1.561593	298	Sporadic or uncertain risk		33						3	1										
+0	43	Burundi	Burundi	not applicable	not applicable	-3.373056	29.918886	1714	Sporadic or uncertain risk	1																		
+0	44	Cambodia	Cambodia	not applicable	not applicable	12.565679	104.990963	10	Frequent or continuous risk	1005	15193	36958	12392	1111														
+0	45	Cameroon	Cameroon	not applicable	not applicable	4.98879288	12.20091341	629	Sporadic or uncertain risk					1														
+0	47	Cape Verde	Cape Verde	not applicable	not applicable	15.120142	-23.6051722	290	Sporadic or uncertain risk						17000													
+0	48	Cayman Islands	Cayman Islands	not applicable	not applicable	19.3133	-81.2546	6	Frequent or continuous risk		69	53					10											
+0	49	Central African Republic	Central African Republic	not applicable	not applicable	6.611111	20.939444	620	Sporadic or uncertain risk																	1		
+0	50	Chad	Chad	not applicable	not applicable	15.454166	18.732207	334	Sporadic or uncertain risk											2								
+1	901	Fujian	China	Fujian	not applicable	25.90329464	118.1745385	796	Sporadic or uncertain risk								39			100								
+1	903	Guangdong	China	Guangdong	not applicable	23.85762121	114.9144802	53	Frequent or continuous risk		108	97		21			25	492										
+1	904	Guangxi	China	Guangxi	not applicable	23.82434438	110.4808663	153	Sporadic or uncertain risk														1					
+1	906	Hainan	China	Hainan	not applicable	19.25166794	109.712022	176	Sporadic or uncertain risk																			114107
+1	304	Jammu and Kashmir	China	Jammu and Kashmir	not applicable	33.99705742	76.2246089	4009	Sporadic or uncertain risk		600																	
+1	925	Taiwan	China	Taiwan	not applicable	23.87876305	120.6968431	102	Frequent or continuous risk	172	214	161	457	1216														
+1	929	Yunnan Sheng	China	Yunnan Sheng	not applicable	24.34711047	101.3916426	1594	Sporadic or uncertain risk		567					20												
+1	930	Zhejiang	China	Zhejiang	not applicable	29.29485644	120.3285733	84	Sporadic or uncertain risk											83								
+0	57	Colombia	Colombia	not applicable	not applicable	4.570868	-74.297333	2512	Frequent or continuous risk	53324	119856	729	17488	112802														
 0	58	Comoros	Comoros	not applicable	not applicable				Sporadic or uncertain risk					10														
 0	59	Congo	Congo	not applicable	not applicable				Sporadic or uncertain risk	1																		
 0	68	Congo (Democratic republic of)	Congo (Democratic republic of)	not applicable	not applicable				Sporadic or uncertain risk															1				
