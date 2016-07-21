@@ -199,91 +199,91 @@ AdminLevel	ID_GAUL	Label	Admin0_name	Admin1_name	Admin2_name	Lat	Long 	elevation
 1	2272	Balochistan	Pakistan	Balochistan	not applicable	28.4907332	65.0957792	675	Sporadic or uncertain risk																	1800		
 1	2273	Fata	Pakistan	Fata	not applicable	32.667476	69.8597406	2062	Sporadic or uncertain risk					18														
 1	2274	Islamabad	Pakistan	Islamabad	not applicable	32.3770799	73.986676	222	Frequent or continuous risk				2632	230		11	55	825										
-1	40408	Jammu and Kashmir	Pakistan	Jammu and Kashmir	not applicable				Sporadic or uncertain risk		600																	
-1	40409	Jammu and Kashmir	Pakistan	Jammu and Kashmir	not applicable				Sporadic or uncertain risk		600																	
-1	2275	Nwfp	Pakistan	Nwfp	not applicable				Frequent or continuous risk		5159		848	158														
-1	2276	Punjab	Pakistan	Punjab	not applicable				Frequent or continuous risk		2589	140	21275	5008		1219												
-1	2277	Sindh	Pakistan	Sindh	not applicable				Frequent or continuous risk	179	5500	715	823	5064														
-0	189	Palau	Palau	not applicable	not applicable				Frequent or continuous risk							31	14	15	9	76	12	73	485					
-0	191	Panama	Panama	not applicable	not applicable				Frequent or continuous risk	3707	3235	1329	3882	1243														
-0	1011441	Papua New Guinea	Papua New Guinea	not applicable	not applicable				Frequent or continuous risk			95																
-0	194	Paraguay	Paraguay	not applicable	not applicable				Frequent or continuous risk	5590	140787	36716	46689	13678														
-1	1012390	Amazonas	Peru	Amazonas	not applicable				Frequent or continuous risk		266	623	494	526	321													
-1	1012304	Ancash	Peru	Ancash	not applicable				Frequent or continuous risk		463	1032			234	100												
-1	1012379	Apurimac	Peru	Apurimac	not applicable				Sporadic or uncertain risk				1															
-1	1012436	AREQUIPA	Peru	AREQUIPA	not applicable				No evidence of risk																			
-1	1012332	AYACUCHO	Peru	AYACUCHO	not applicable				No evidence of risk																			
-1	1012429	Cajamarca	Peru	Cajamarca	not applicable				Frequent or continuous risk		108	3238	842	1030	629													
-1	1012410	Cusco	Peru	Cusco	not applicable				Sporadic or uncertain risk				58															
-1	1012306	HUANCAVELICA	Peru	HUANCAVELICA	not applicable				No evidence of risk																			
-1	1012344	Huanuco	Peru	Huanuco	not applicable				Frequent or continuous risk		86	277	140	338	373													
-1	1012417	ICA	Peru	ICA	not applicable				No evidence of risk																			
-1	1012307	Junin	Peru	Junin	not applicable				Frequent or continuous risk		817	566	116				387	226										
-1	1012399	La Libertad	Peru	La Libertad	not applicable				Frequent or continuous risk		22	110	19			270	1522											
-1	1012451	Lambayeque	Peru	Lambayeque	not applicable				Frequent or continuous risk		30	720	22	890	1027													
-1	1012444	Lima	Peru	Lima	not applicable				Frequent or continuous risk		103	343		301		193	39											
-1	1012328	Loreto	Peru	Loreto	not applicable				Frequent or continuous risk		4502	3900	22714	4153	5559													
-1	1012440	Madre de Dios	Peru	Madre de Dios	not applicable				Frequent or continuous risk		2236	1551	1978	4405	1604													
-1	1012356	MOQUEGUA	Peru	MOQUEGUA	not applicable				No evidence of risk																			
-1	1012373	Pasco	Peru	Pasco	not applicable				Frequent or continuous risk		70	91	92			34												
-1	1012396	Piura	Peru	Piura	not applicable				Frequent or continuous risk		2104	1284	280	9893	5760													
-1	1012362	Puno	Peru	Puno	not applicable				Sporadic or uncertain risk		5	3	3															
-1	1012426	San Martin	Peru	San Martin	not applicable				Frequent or continuous risk		1517	2061	1753		1106	1175												
-1	1012404	TACNA	Peru	TACNA	not applicable				No evidence of risk																			
-1	1012327	Tumbes	Peru	Tumbes	not applicable				Frequent or continuous risk		268	748	258	1598	1127													
-1	1012374	Ucayali	Peru	Ucayali	not applicable				Frequent or continuous risk		1233	6714	1032		1405	1313												
-0	196	Philippines	Philippines	not applicable	not applicable				Frequent or continuous risk	448	117658	132046	97158	119789														
-0	200	Puerto Rico	Puerto Rico	not applicable	not applicable				Frequent or continuous risk	2132	18164	12877	5654	21298														
-0	206	Reunion	Reunion	not applicable	not applicable				Sporadic or uncertain risk			20																
-0	205	Rwanda	Rwanda	not applicable	not applicable				Sporadic or uncertain risk																		1	
-0	212	Samoa	Samoa	not applicable	not applicable				Sporadic or uncertain risk			10				500												
-0	214	Sao Tome and Principe	Sao Tome and Principe	not applicable	not applicable				Sporadic or uncertain risk	1																		
-1	2627	Jizan	Saudi Arabia	Jizan	not applicable				Sporadic or uncertain risk					156														
-1	2628	Madinah	Saudi Arabia	Madinah	not applicable				No evidence of risk																			
-1	2629	Makkah	Saudi Arabia	Makkah	not applicable				Frequent or continuous risk		4404	981	2365	2231	1596													
-0	217	Senegal	Senegal	not applicable	not applicable				Sporadic or uncertain risk						55													
-0	220	Seychelles	Seychelles	not applicable	not applicable				Sporadic or uncertain risk											1								
-0	221	Sierra Leone	Sierra Leone	not applicable	not applicable				Sporadic or uncertain risk	1																		
-0	1011444	Solomon Islands	Solomon Islands	not applicable	not applicable				Sporadic or uncertain risk		6000	3651																
-0	226	Somalia	Somalia	not applicable	not applicable				Sporadic or uncertain risk				122															
-1	2441	Kyongsangnam-do (South Gyeongsang)	South Korea	Kyongsangnam-do (South Gyeongsang)	not applicable				No evidence of risk																			
-0	1013968	South Sudan	South Sudan	not applicable	not applicable				Sporadic or uncertain risk	1																		
-0	231	Sri Lanka	Sri Lanka	not applicable	not applicable				Frequent or continuous risk	12322	20216	50000	22926	22159														
-0	208	St Kitts and Nevis	St Kitts and Nevis	not applicable	not applicable				Frequent or continuous risk		100		47	19		49												
-0	209	St Lucia	St Lucia	not applicable	not applicable				Frequent or continuous risk		234	33	585	74	18													
-0	211	St Vincent and the Grenadines	St Vincent and the Grenadines	not applicable	not applicable				Frequent or continuous risk		127	193	47	133	10													
-0	40764	Sudan	Sudan	not applicable	not applicable				Frequent or continuous risk	738				81		41			302	10								
-0	233	Suriname	Suriname	not applicable	not applicable				Frequent or continuous risk		21	300	409	113	103													
-0	257	Tanzania	Tanzania	not applicable	not applicable				Frequent or continuous risk					2														
-0	240	Thailand	Thailand	not applicable	not applicable				Frequent or continuous risk	6420	139684	55485	48760	57948														
-0	242	Timor-Leste	Timor-Leste	not applicable	not applicable				Frequent or continuous risk	160		206	352			20			40									
-0	243	Togo	Togo	not applicable	not applicable				Sporadic or uncertain risk					1														
-0	244	Tokelau	Tokelau	not applicable	not applicable				Sporadic or uncertain risk													3						
-0	245	Tonga	Tonga	not applicable	not applicable				Frequent or continuous risk	10000						200			100						98			
-0	246	Trinidad and Tobago	Trinidad and Tobago	not applicable	not applicable				Frequent or continuous risk		3289	2473	1243	2497	24													
-0	251	Turks and Caicos	Turks and Caicos	not applicable	not applicable				Sporadic or uncertain risk			16	24															
-0	252	Tuvalu	Tuvalu	not applicable	not applicable				Sporadic or uncertain risk	176																		
-0	253	Uganda	Uganda	not applicable	not applicable				Sporadic or uncertain risk																		1	
-2	29003	Broward	United States of America	Florida	Broward				Sporadic or uncertain risk					1														
-2	31230	Cameron	United States of America	Texas	Cameron				Sporadic or uncertain risk		21																	
-1	3225	Hawaii	United States of America	Hawaii	not applicable				Sporadic or uncertain risk				4										118					
-2	31307	Hidalgo	United States of America	Texas	Hidalgo				Sporadic or uncertain risk		2																	
-2	29025	Hillsborough	United States of America	Florida	Hillsborough				Sporadic or uncertain risk				1															
-2	29039	Martin	United States of America	Florida	Martin				Sporadic or uncertain risk		17		1															
-2	29040	Miami Dade	United States of America	Florida	Miami Dade				Sporadic or uncertain risk		2	1	3	1														
-2	29041	Monroe	United States of America	Florida	Monroe				Sporadic or uncertain risk					56	20													
-2	29046	Osceola	United States of America	Florida	Osceola				Sporadic or uncertain risk			1																
-2	29047	Palm Beach	United States of America	Florida	Palm Beach				Sporadic or uncertain risk		1		2															
-2	30498	Santa Fe	United States of America	New Mexico	Santa Fe				No evidence of risk																			
-2	29056	St Lucie	United States of America	Florida	St Lucie				Sporadic or uncertain risk		4																	
-2	30556	Suffolk	United States of America	New York	Suffolk				Sporadic or uncertain risk																			
-2	31444	Willacy	United States of America	Texas	Willacy				Sporadic or uncertain risk		1																	
-0	260	Uruguay	Uruguay	not applicable	not applicable				Sporadic or uncertain risk		3						1											
-0	258	US Virgin Islands	US Virgin Islands	not applicable	not applicable				Frequent or continuous risk		141						73											
-0	262	Vanuatu	Vanuatu	not applicable	not applicable				Sporadic or uncertain risk	313																		
-0	263	Venezuela	Venezuela	not applicable	not applicable				Frequent or continuous risk	2953	52587	40635		114855	35546													
-0	1011447	Vietnam	Vietnam	not applicable	not applicable				Frequent or continuous risk		25300	51000	49011	80000	17140													
-0	266	Wallis and Futuna	Wallis and Futuna	not applicable	not applicable				Sporadic or uncertain risk												2071	829						
-0	269	Yemen	Yemen	not applicable	not applicable				Frequent or continuous risk			1200		2200	1000	525			345									
-0	270	Zambia	Zambia	not applicable	not applicable				Sporadic or uncertain risk																		1	
-0	271	Zimbabwe	Zimbabwe	not applicable	not applicable				Sporadic or uncertain risk																		1	
+1	40408	Jammu and Kashmir	Pakistan	Jammu and Kashmir	not applicable	34.02352709	75.96606418	4959	Sporadic or uncertain risk		600																	
+1	40409	Jammu and Kashmir	Pakistan	Jammu and Kashmir	not applicable	34.02352709	75.96606418	4959	Sporadic or uncertain risk		600																	
+1	2275	Nwfp	Pakistan	Nwfp	not applicable	34.9526205	72.331113	1431	Frequent or continuous risk		5159		848	158														
+1	2276	Punjab	Pakistan	Punjab	not applicable	31.1704063	72.7097161	168	Frequent or continuous risk		2589	140	21275	5008		1219												
+1	2277	Sindh	Pakistan	Sindh	not applicable	25.8943018	68.5247149	5	Frequent or continuous risk	179	5500	715	823	5064														
+0	189	Palau	Palau	not applicable	not applicable	7.51498	134.58252	73	Frequent or continuous risk							31	14	15	9	76	12	73	485					
+0	191	Panama	Panama	not applicable	not applicable	9.06996635	-79.21108208	3	Frequent or continuous risk	3707	3235	1329	3882	1243														
+0	1011441	Papua New Guinea	Papua New Guinea	not applicable	not applicable	-9.42708336	147.2075031	7	Frequent or continuous risk			95																
+0	194	Paraguay	Paraguay	not applicable	not applicable	-23.442503	-58.443832	93	Frequent or continuous risk	5590	140787	36716	46689	13678														
+1	1012390	Amazonas	Peru	Amazonas	not applicable	-5.115146	-78.1108279	667	Frequent or continuous risk		266	623	494	526	321													
+1	1012304	Ancash	Peru	Ancash	not applicable	-9.3250497	-77.56194193	3014	Frequent or continuous risk		463	1032			234	100												
+1	1012379	Apurimac	Peru	Apurimac	not applicable	-14.0504533	-73.087749	3702	Sporadic or uncertain risk				1															
+1	1012436	AREQUIPA	Peru	AREQUIPA	not applicable	-16.4090474	-71.537451	2321	No evidence of risk																			
+1	1012332	AYACUCHO	Peru	AYACUCHO	not applicable	-13.1638737	-74.2235641	2718	No evidence of risk																			
+1	1012429	Cajamarca	Peru	Cajamarca	not applicable	-7.1617465	-78.5127855	2722	Frequent or continuous risk		108	3238	842	1030	629													
+1	1012410	Cusco	Peru	Cusco	not applicable	-13.9371775	-71.5723953	4186	Sporadic or uncertain risk				58															
+1	1012306	HUANCAVELICA	Peru	HUANCAVELICA	not applicable	-12.9280456	-75.1545381	4699	No evidence of risk																			
+1	1012344	Huanuco	Peru	Huanuco	not applicable	-12.0732894	-75.2073294	3250	Frequent or continuous risk		86	277	140	338	373													
+1	1012417	ICA	Peru	ICA	not applicable	-13.9379378	-75.8007093	443	No evidence of risk																			
+1	1012307	Junin	Peru	Junin	not applicable	-11.335798	-75.3412179	1714	Frequent or continuous risk		817	566	116				387	226										
+1	1012399	La Libertad	Peru	La Libertad	not applicable	-8.1435933	-78.4751945	2881	Frequent or continuous risk		22	110	19			270	1522											
+1	1012451	Lambayeque	Peru	Lambayeque	not applicable	-6.4776528	-79.9192702	40	Frequent or continuous risk		30	720	22	890	1027													
+1	1012444	Lima	Peru	Lima	not applicable	-12.046374	-77.0427934	138	Frequent or continuous risk		103	343		301		193	39											
+1	1012328	Loreto	Peru	Loreto	not applicable	-4.2324729	-74.2179326	112	Frequent or continuous risk		4502	3900	22714	4153	5559													
+1	1012440	Madre de Dios	Peru	Madre de Dios	not applicable	-11.7668705	-70.8119953	422	Frequent or continuous risk		2236	1551	1978	4405	1604													
+1	1012356	MOQUEGUA	Peru	MOQUEGUA	not applicable	-16.895405	-70.8574902	3080	No evidence of risk																			
+1	1012373	Pasco	Peru	Pasco	not applicable	-10.4475753	-75.1545381	1182	Frequent or continuous risk		70	91	92			34												
+1	1012396	Piura	Peru	Piura	not applicable	-5.1782884	-80.6548882	39	Frequent or continuous risk		2104	1284	280	9893	5760													
+1	1012362	Puno	Peru	Puno	not applicable	-15.8402218	-70.0218805	3825	Sporadic or uncertain risk		5	3	3															
+1	1012426	San Martin	Peru	San Martin	not applicable	-7.2444881	-76.8259652	338	Frequent or continuous risk		1517	2061	1753		1106	1175												
+1	1012404	TACNA	Peru	TACNA	not applicable	-18.0065679	-70.2462741	597	No evidence of risk																			
+1	1012327	Tumbes	Peru	Tumbes	not applicable	-3.5564921	-80.4270885	24	Frequent or continuous risk		268	748	258	1598	1127													
+1	1012374	Ucayali	Peru	Ucayali	not applicable	-9.8251183	-73.087749	336	Frequent or continuous risk		1233	6714	1032		1405	1313												
+0	196	Philippines	Philippines	not applicable	not applicable	12.879721	121.774017	0	Frequent or continuous risk	448	117658	132046	97158	119789														
+0	200	Puerto Rico	Puerto Rico	not applicable	not applicable	18.220833	-66.590149	454	Frequent or continuous risk	2132	18164	12877	5654	21298														
+0	206	Reunion	Reunion	not applicable	not applicable	-21.115141	55.536384	1667	Sporadic or uncertain risk			20																
+0	205	Rwanda	Rwanda	not applicable	not applicable	-1.940278	29.873888	1583	Sporadic or uncertain risk																		1	
+0	212	Samoa	Samoa	not applicable	not applicable	-13.759029	-172.104629	0	Sporadic or uncertain risk			10				500												
+0	214	Sao Tome and Principe	Sao Tome and Principe	not applicable	not applicable	0.18636	6.613081	141	Sporadic or uncertain risk	1																		
+1	2627	Jizan	Saudi Arabia	Jizan	not applicable	17.4751353	42.7076107	212	Sporadic or uncertain risk					156														
+1	2628	Madinah	Saudi Arabia	Madinah	not applicable	24.5246542	39.5691841	589	No evidence of risk																			
+1	2629	Makkah	Saudi Arabia	Makkah	not applicable	21.5235584	41.9196471	1131	Frequent or continuous risk		4404	981	2365	2231	1596													
+0	217	Senegal	Senegal	not applicable	not applicable	14.81626508	-16.89132684	48	Sporadic or uncertain risk						55													
+0	220	Seychelles	Seychelles	not applicable	not applicable	-4.679574	55.491977	0	Sporadic or uncertain risk											1								
+0	221	Sierra Leone	Sierra Leone	not applicable	not applicable	8.43882085	-12.94443978	27	Sporadic or uncertain risk	1																		
+0	1011444	Solomon Islands	Solomon Islands	not applicable	not applicable	-9.64571	160.156194	519	Sporadic or uncertain risk		6000	3651																
+0	226	Somalia	Somalia	not applicable	not applicable	2.21421913	45.29873709	112	Sporadic or uncertain risk				122															
+1	2441	Kyongsangnam-do (South Gyeongsang)	South Korea	Kyongsangnam-do (South Gyeongsang)	not applicable	35.4606	128.2132	472	No evidence of risk																			
+0	1013968	South Sudan	South Sudan	not applicable	not applicable	5.15077192	31.63656864	473	Sporadic or uncertain risk	1																		
+0	231	Sri Lanka	Sri Lanka	not applicable	not applicable	6.95793095	80.15656262	107	Frequent or continuous risk	12322	20216	50000	22926	22159														
+0	208	St Kitts and Nevis	St Kitts and Nevis	not applicable	not applicable	17.357822	-62.782998	729	Frequent or continuous risk		100		47	19		49												
+0	209	St Lucia	St Lucia	not applicable	not applicable	13.909444	-60.978893	304	Frequent or continuous risk		234	33	585	74	18													
+0	211	St Vincent and the Grenadines	St Vincent and the Grenadines	not applicable	not applicable	13.2528179	-61.1971629	622	Frequent or continuous risk		127	193	47	133	10													
+0	40764	Sudan	Sudan	not applicable	not applicable	14.4853363	30.217636	492	Frequent or continuous risk	738				81		41			302	10								
+0	233	Suriname	Suriname	not applicable	not applicable	3.919305	-56.027783	167	Frequent or continuous risk		21	300	409	113	103													
+0	257	Tanzania	Tanzania	not applicable	not applicable	-6.369028	34.888822	1170	Frequent or continuous risk					2														
+0	240	Thailand	Thailand	not applicable	not applicable	14.38529336	100.5530879	8	Frequent or continuous risk	6420	139684	55485	48760	57948														
+0	242	Timor-Leste	Timor-Leste	not applicable	not applicable	-8.874217	125.727539	714	Frequent or continuous risk	160		206	352			20			40									
+0	243	Togo	Togo	not applicable	not applicable	8.619543	0.824782	481	Sporadic or uncertain risk					1														
+0	244	Tokelau	Tokelau	not applicable	not applicable	-9.2002	-171.8484	0	Sporadic or uncertain risk													3						
+0	245	Tonga	Tonga	not applicable	not applicable	-21.178986	-175.198242	0	Frequent or continuous risk	10000						200			100						98			
+0	246	Trinidad and Tobago	Trinidad and Tobago	not applicable	not applicable	10.691803	-61.222503	220	Frequent or continuous risk		3289	2473	1243	2497	24													
+0	251	Turks and Caicos	Turks and Caicos	not applicable	not applicable	21.77566725	-71.797928	4	Sporadic or uncertain risk			16	24															
+0	252	Tuvalu	Tuvalu	not applicable	not applicable	-7.4784206	178.679924	11	Sporadic or uncertain risk	176																		
+0	253	Uganda	Uganda	not applicable	not applicable	1.373333	32.290275	1075	Sporadic or uncertain risk																		1	
+2	29003	Broward	United States of America	Florida	Broward	26.190096	-80.365865	4	Sporadic or uncertain risk					1														
+2	31230	Cameron	United States of America	Texas	Cameron	30.8532454	-96.9769304	120	Sporadic or uncertain risk		21																	
+1	3225	Hawaii	United States of America	Hawaii	not applicable	21.31071584	-157.8514586	37	Sporadic or uncertain risk				4										118					
+2	31307	Hidalgo	United States of America	Texas	Hidalgo	26.1003547	-98.2630684	34	Sporadic or uncertain risk		2																	
+2	29025	Hillsborough	United States of America	Florida	Hillsborough	27.9903597	-82.3017728	19	Sporadic or uncertain risk				1															
+2	29039	Martin	United States of America	Florida	Martin	27.0804935	-80.4103957	9	Sporadic or uncertain risk		17		1															
+2	29040	Miami Dade	United States of America	Florida	Miami Dade	25.5516034	-80.6326916	2	Sporadic or uncertain risk		2	1	3	1														
+2	29041	Monroe	United States of America	Florida	Monroe	24.5557001	-81.7825985	1	Sporadic or uncertain risk					56	20													
+2	29046	Osceola	United States of America	Florida	Osceola	28.1019838	-81.0754657	23	Sporadic or uncertain risk			1																
+2	29047	Palm Beach	United States of America	Florida	Palm Beach	26.7056206	-80.0364297	2	Sporadic or uncertain risk		1		2															
+2	30498	Santa Fe	United States of America	New Mexico	Santa Fe	35.6869752	-105.937799	2132	No evidence of risk																			
+2	29056	St Lucie	United States of America	Florida	St Lucie	27.2730492	-80.3582261	7	Sporadic or uncertain risk		4																	
+2	30556	Suffolk	United States of America	New York	Suffolk	40.9848784	-72.6151169	2	Sporadic or uncertain risk																			
+2	31444	Willacy	United States of America	Texas	Willacy	26.4948223	-97.6982272	8	Sporadic or uncertain risk		1																	
+0	260	Uruguay	Uruguay	not applicable	not applicable	-32.522779	-55.765835	89	Sporadic or uncertain risk		3						1											
+0	258	US Virgin Islands	US Virgin Islands	not applicable	not applicable	18.335765	-64.896335	61	Frequent or continuous risk		141						73											
+0	262	Vanuatu	Vanuatu	not applicable	not applicable	-15.20714843	167.1239529	166	Sporadic or uncertain risk	313																		
+0	263	Venezuela	Venezuela	not applicable	not applicable	10.24933359	-66.87537453	526	Frequent or continuous risk	2953	52587	40635		114855	35546													
+0	1011447	Vietnam	Vietnam	not applicable	not applicable	12.28264304	108.1233904	651	Frequent or continuous risk		25300	51000	49011	80000	17140													
+0	266	Wallis and Futuna	Wallis and Futuna	not applicable	not applicable	-14.2938	-178.1165	313	Sporadic or uncertain risk												2071	829						
+0	269	Yemen	Yemen	not applicable	not applicable	15.34093753	44.73709113	1894	Frequent or continuous risk			1200		2200	1000	525			345									
+0	270	Zambia	Zambia	not applicable	not applicable	-14.96692391	28.24483981	1163	Sporadic or uncertain risk																		1	
+0	271	Zimbabwe	Zimbabwe	not applicable	not applicable	-17.80628074	31.04450544	1495	Sporadic or uncertain risk																		1	
