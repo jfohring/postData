@@ -1,0 +1,2 @@
+Data downloaded from here:   http://e4ftl01.cr.usgs.gov/MOLT/
+see https://lpdaac.usgs.gov/data_access/data_pool for more detials and citation information
