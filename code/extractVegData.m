@@ -27,4 +27,4 @@ figure, imagesc(data)
 
 % where to save to
 savefile = 'D:\Jenn\Documents\ZikaData\Data\land_cover\MOD13C2_EVI';
-save([savefile filesep filename],'S','data','normalizedData')
+save([savefile filesep year month],'S','data','normalizedData')
