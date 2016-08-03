@@ -3,8 +3,10 @@ clear
 clc
 %% 1. Open textfile to get correct url for each month, download EVI data and rename file
 fid = fopen('D:\Jenn\Documents\ZikaData\Data\land_cover\MOD13C2_EVI\data_url_script_2016-08-03_151807.txt');
+
 years = [2012, 2013,2014, 2015];
 options = weboptions('Username','jfohring','Password','Forests2');
+
 for k = 1:4
     for j = 1:12
         year = years(k);
