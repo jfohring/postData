@@ -29,4 +29,3 @@ Grid.Country.longcc = Grid.World.longcc(ind);
  figure(1)
  geoshow('ARG_adm0.shp')
 hold on
-plot(
