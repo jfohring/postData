@@ -1,5 +1,6 @@
 Data downloaded from here:   http://e4ftl01.cr.usgs.gov/MOLT/
 see https://lpdaac.usgs.gov/data_access/data_pool for more detials and citation information
+http://modis.gsfc.nasa.gov/data/dataprod/mod13.php
 
 http://e4ftl01.cr.usgs.gov/MOLT/MOD13C2.005/
 https://lpdaac.usgs.gov/dataset_discovery/modis/modis_products_table/mod13c2
