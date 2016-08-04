@@ -18,7 +18,7 @@ D        = datetime(year,month,01,'Format','yyyy.MM.dd');
 d        = yyyymmdd(D);
 D        = char(D,'yyyyMM');
 
-%%
+%% extract lat, long, Temp and Precipitaion data sets
 delimiterIn = ','; %  save files as comma separated text files ('\t') for tab separated
 headerlinesIn = 1;
 
@@ -43,6 +43,25 @@ Tdata = T.data(:,50);
 Pdata(find(Pdata<0)) = 0;
 Tdata(find(Tdata<0)) = 0;
 
-%%
+%% Plot data for first 3 months of 2015;
 figure(1);clf
-plot(Tdata)
+
+for k = 1:3
+    a = (k-1)*63 +1;
+    b = k*63;
+
+    subplot(1,2,1)
+    plot(Tdata(a:b),'s-'); hold all;
+
+    subplot(1,2,2)
+    plot(Pdata(a:b),'s-'); hold all;
+end
+subplot(1,2,1)
+title('temp data')
+xlabel('station')
+ylabel('ave temp /month (C)')
+
+subplot(1,2,2)
+title('precip data')
+xlabel('station')
+ylabel('precip/ month (mm)')
