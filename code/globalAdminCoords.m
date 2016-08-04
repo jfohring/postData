@@ -5,8 +5,9 @@
 
 
 % learning shaperead and shapefiles (Afgahnistan)
-[S, A] = shaperead('ARG_adm1.shp', 'UseGeoCoords',true);
+[S, A] = shaperead('ARG_adm0.shp', 'UseGeoCoords',true);
+bbox = S.BoundingBox; % [min x min y; max x max y] [min long, min lat, max long, max lat]
 
 % just plot all the admin level 1 provincial boundaries
-figure(1)
-geoshow('ARG_adm1.shp')
+ figure(1)
+ geoshow('ARG_adm0.shp')
