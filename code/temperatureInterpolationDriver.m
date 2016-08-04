@@ -11,6 +11,8 @@ clc
 close all
 
 %% import temp station locations for Argentina
+country  = 'Argentina';
+
 filename = 'Argentina_2015.csv';
 year     = 2015;
 month    = 1;
@@ -65,3 +67,5 @@ subplot(1,2,2)
 title('precip data')
 xlabel('station')
 ylabel('precip/ month (mm)')
+
+%% get GCM grid for specific country
