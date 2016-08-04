@@ -9,9 +9,16 @@
 clear
 clc
 close all
+
 %% import temp station locations for Argentina
-filename = 'Argentina.xlsx';
-delimiterIn = '\t'; % if it's the tab deliminated text file
+filename = 'Argentina_2015.csv';
+year  = 2015;
+month = 1;
+D     = datetime(year,month,01,'Format','yyyy.MM.dd');
+D     = char(D,'yyyyMM');
+
+
+delimiterIn = ','; %  save files as comma separated text files ('\t') for tab separated
 headerlinesIn = 1;
 
 % get a structure with headers and text
