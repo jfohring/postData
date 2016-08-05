@@ -15,16 +15,20 @@ close all
 % for more information on Global administrative areas
  
 % country  = 'Argentina';
-country  = 'Bolivia';
+% country  = 'Bolivia';
+country = 'Brazil';
 
 % Make sure the temperature data file is sorted by DATE and that any 'unknown' values
 % in the spreadsheet are replaced with NaN. 
 
 %  filename = 'Argentina_2015.csv';
- filename = 'Bolivia_2015.csv';
+%  filename = 'Bolivia_2015.csv';
 
+ filename = 'Brazil_2015.csv';
 % cID = 'ARG';
 cID = 'BOL';
+cID = 'BRA';
+
 year     = 2015;
 month    = 1;
 D        = datetime(year,month,01,'Format','yyyy.MM.dd');
@@ -121,14 +125,14 @@ axis equal
 set(gca,'YDir','normal')
 bb = Grid.BoundingBox;
 axis([bb(1,1) bb(2,1) bb(1,2) bb(2,2)])
-colorbar
+
 
 hold on
 scatter(oldLon,oldLat,20,t,'s','filled')
 scatter(oldLon,oldLat,21,'ks')
 title('GCM temp data');
     
-[la,lo] = borders('argentina');
+[la,lo] = borders(country);
 scatter(lo,la,2,'ko','filled')
 
 %
@@ -138,13 +142,13 @@ axis equal
 set(gca,'YDir','normal')
 bb = Grid.BoundingBox;
 axis([bb(1,1) bb(2,1) bb(1,2) bb(2,2)])
-colorbar
+
 
 hold on
 scatter(oldLon,oldLat,20,p,'s','filled')
 scatter(oldLon,oldLat,21,'ks')
 title('GCM precipitation data');
     
-[la,lo] = borders('argentina');
+[la,lo] = borders(country);
 scatter(lo,la,2,'ko','filled')
 %
