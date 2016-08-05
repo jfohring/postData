@@ -26,6 +26,9 @@ Grid.Country.longcc = Grid.World.longcc(ind);
 
 
 % just plot all the admin level 1 provincial boundaries
- figure(1)
- geoshow('ARG_adm0.shp')
+figure(1),clf
+geoshow('ARG_adm0.shp')
 hold on
+plot(bbox(1,1), bbox(1,2),'r*',bbox(2,1),bbox(1,2),'r*', 'MarkerSize',5)
+plot(bbox(1,1), bbox(2,2),'r*',bbox(2,1),bbox(2,2),'r*', 'MarkerSize',5)
+
