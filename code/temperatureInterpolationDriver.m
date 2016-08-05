@@ -33,6 +33,7 @@ T = importdata(filename,delimiterIn);
 nstat = sum(T.data(:,4)== d);
 Lat = T.data(:,2);
 Lon = T.data(:,3);
+dates = T.data(:,4);
 
 % want (TPCP (total precipitation amout per month, mm)) and (MNTM (mean temp C))
 colP = 38; % TPCP
@@ -42,34 +43,33 @@ Pdata = T.data(:,38);
 Tdata = T.data(:,50);
 
 % remove negative values
-Pdata(find(Pdata<0)) = 0;
-Tdata(find(Tdata<0)) = 0;
+indP = find(Pdata<0);
+indT = find(Tdata<0);
+
+
+Pdata(indP) = 0;
+Tdata(indT) = 0;
+
+%% look at data set for each year
+for k = 1:12
+    D = datetime(year,k,01,'Format','yyyy.MM.dd');
+    d  = yyyymmdd(D);
+    yearInd = find(T.data(:,4) == d);
+    
+    figure(1), hold all
+    plot(Pdata(yearInd),'s-')
+    title(['Precip data (mm). n stations = ',num2str(length(yearInd))])
+    figure(2), hold all
+    plot(Tdata(yearInd),'o-')
+    title('temp data (C)')
+end
+
 
 %% get GCM grid for specific country
 Grid = getGMCgrid('ARG', 0);
 
-%% Plot data for first 3 months of 2015;
-figure(1);clf
+%% interpolate data to argentina grid for 12 months
 
-for k = 1:3
-    a = (k-1)*63 +1;
-    b = k*63;
-
-    subplot(1,2,1)
-    plot(Tdata(a:b),'s-'); hold all;
-
-    subplot(1,2,2)
-    plot(Pdata(a:b),'s-'); hold all;
-end
-subplot(1,2,1)
-title('temp data')
-xlabel('station')
-ylabel('ave temp /month (C)')
-
-subplot(1,2,2)
-title('precip data')
-xlabel('station')
-ylabel('precip/ month (mm)')
 
 
 
