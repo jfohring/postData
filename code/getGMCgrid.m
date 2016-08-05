@@ -26,7 +26,16 @@ ind = find(bbox(1,2) >=   Grid.World.latcc  & Grid.World.latcc <= bbox(2,2));
 Grid.Country.latcc = Grid.World.latcc(ind);
 
 ind = find(bbox(1,1) >=   Grid.World.longcc  & Grid.World.longcc <= bbox(2,1));
+
+%% plot for testing
+% rough center average of country bounding box
+cent = (bbox(1,:) + bbox(2,:))/2;
+
+figure(1),clf
+geoshow(filename)
+hold on
+plot(bbox(1,1), bbox(1,2),'r*',bbox(2,1),bbox(1,2),'r*', 'MarkerSize',5)
+plot(bbox(1,1), bbox(2,2),'r*',bbox(2,1),bbox(2,2),'r*', 'MarkerSize',5)
+plot(cent(1), cent(2),'bo', 'MarkerSize',5,'LineWidth',4)
 Grid.Country.longcc = Grid.World.longcc(ind);
 
-% Grid.Country.latcc
-% Grid.Country.longcc
