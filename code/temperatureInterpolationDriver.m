@@ -84,7 +84,7 @@ for k = 1
 
     figure(1),
     scatter(oldLon,oldLat,20,t,'s', 'filled')
-    title('precipdata');
+    title('temp data');
     
     % do some exprapolation/ interpolation
     Fp = scatteredInterpolant(oldLon,oldLat,p);
@@ -92,12 +92,26 @@ for k = 1
     Ft = scatteredInterpolant(oldLon,oldLat,t);
     tGCM = Ft(X,Y);
 
-    
-    
+       
 end
 %%
-figure(4),imagesc(newLat,newLon,tGCM)
-  
+figure(2);plot(t)
+figure(3);plot(tGCM(:))
+%%
+
+figure(4),clf
+imagesc(newLon, newLat,tGCM)
+axis equal
+set(gca,'YDir','normal')
+bb = Grid.BoundingBox;
+axis([bb(1,1) bb(2,1) bb(1,2) bb(2,2)])
+
+
+hold on
+scatter(oldLon,oldLat,20,t,'s','filled')
+scatter(oldLon,oldLat,21,'ks')
+title('GCM temp data');
     
-% figure(5);clf
-% geoshow(X,Y,tGCM)
+[la,lo] = borders('argentina');
+scatter(lo,la,2,'ko','filled')
+%
