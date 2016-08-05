@@ -45,6 +45,9 @@ Tdata = T.data(:,50);
 Pdata(find(Pdata<0)) = 0;
 Tdata(find(Tdata<0)) = 0;
 
+%% get GCM grid for specific country
+Grid = getGMCgrid('ARG', 0);
+
 %% Plot data for first 3 months of 2015;
 figure(1);clf
 
@@ -68,4 +71,6 @@ title('precip data')
 xlabel('station')
 ylabel('precip/ month (mm)')
 
-%% get GCM grid for specific country
+
+
+
