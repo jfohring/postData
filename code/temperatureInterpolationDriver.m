@@ -17,9 +17,11 @@ close all
 % country  = 'Argentina';
 country  = 'Bolivia';
 
-% Make sure the temperature data file is sorted by DATE! 
-% filename = 'Argentina_2015.csv';
-filename = 'Bolivia_2015.csv';
+% Make sure the temperature data file is sorted by DATE and that any 'unknown' values
+% in the spreadsheet are replaced with NaN. 
+
+%  filename = 'Argentina_2015.csv';
+ filename = 'Bolivia_2015.csv';
 
 % cID = 'ARG';
 cID = 'BOL';
