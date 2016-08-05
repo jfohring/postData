@@ -43,22 +43,22 @@ Pdata = T.data(:,38);
 Tdata = T.data(:,50);
 
 % remove negative values
-Pdata(find(Pdata<0)) = 0;
-Tdata(find(Tdata<0)) = 0;
+Pdata(find(Pdata<0)) = NaN;
+Tdata(find(Tdata<0)) = NaN;
 
 %% look at data set for each year
-for k = 1:12
-    D = datetime(year,k,01,'Format','yyyy.MM.dd');
-    d  = yyyymmdd(D);
-    yearInd = find(T.data(:,4) == d);
-    
-    figure(2), hold all
-    plot(Pdata(yearInd),'s-')
-    title(['Precip data (mm). n stations = ',num2str(length(yearInd))])
-    figure(3), hold all
-    plot(Tdata(yearInd),'o-')
-    title('temp data (C)')
-end
+% for k = 1:12
+%     D = datetime(year,k,01,'Format','yyyy.MM.dd');
+%     d  = yyyymmdd(D);
+%     yearInd = find(T.data(:,4) == d);
+%     
+%     figure(2), hold all
+%     plot(Pdata(yearInd),'s-')
+%     title(['Precip data (mm). n stations = ',num2str(length(yearInd))])
+%     figure(3), hold all
+%     plot(Tdata(yearInd),'o-')
+%     title('temp data (C)')
+% end
 
 %% get GCM grid for specific country
 Grid = getGMCgrid('ARG', 0);
@@ -93,9 +93,11 @@ for k = 1
     tGCM = Ft(X,Y);
 
     
-%     figure(4),imagesc(tGCM')
-%     axes('reverse')
+    
 end
-
-
-
+%%
+figure(4),imagesc(newLat,newLon,tGCM)
+  
+    
+% figure(5);clf
+% geoshow(X,Y,tGCM)
