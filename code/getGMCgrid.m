@@ -4,25 +4,29 @@ function [Grid] = getGMCgrid(country, admin)
 % degrees with 0.05 degree pixel length (~5600m x 5600m). J.Fohring 2016
 % -----------------------------------------------------------
 % ISO code for country should be a string.
-% Admin level is numberica
-
-%____________________________________________________________
-% pass a string that is the country ISO code. ie 'ARG'
+% Admin level is numberic
+% input: country = country id from Global Administrative area
+%          admin = numberic value (0,1,2,3..) for administrative area level
+%                    0: country border
+%                    1: provincial borders
+%___________________________________________________________
 filename = [country '_adm' num2str(admin) '.shp'];
 
-% learning shaperead and shapefiles (Afgahnistan)
+% read shape file for specific country and admin level
 [S, ~] = shaperead(filename, 'UseGeoCoords',true);
+
+% get the bounding box coordinates
 bbox = S.BoundingBox; % [min x min y; max x max y] [min long, min lat; max long, max lat]
 
 
-% extract regional mesh from big mesh
-Grid.World.lat = -90:0.05:90;
+% extract regional mesh from big GCM mesh
+Grid.World.lat  = -90:0.05:90;
 Grid.World.long = -180: 0.05: 180;
 
-Grid.World.latcc = Grid.World.lat(1:end-1)+0.025;
+Grid.World.latcc  = Grid.World.lat(1:end-1) + 0.025;
 Grid.World.longcc = Grid.World.long(1:end-1) + 0.025;
 
-
+% extract cell center points within the bounding box
 ind = find(Grid.World.latcc >= bbox(1,2)  & Grid.World.latcc <= bbox(2,2));
 Grid.Country.latcc = Grid.World.latcc(ind);
 
