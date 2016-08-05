@@ -10,10 +10,19 @@ clear
 clc
 close all
 
-%% import temp station locations for Argentina
-country  = 'Argentina';
+%% import temp station locations for a specific country. 
+% Need also the coundtry ID see http://www.gadm.org/, https://en.wikipedia.org/wiki/GADM
+% for more information on Global administrative areas
+ 
+% country  = 'Argentina';
+country  = 'Bolivia';
 
-filename = 'Argentina_2015.csv';
+% Make sure the temperature data file is sorted by DATE! 
+% filename = 'Argentina_2015.csv';
+filename = 'Bolivia_2015.csv';
+
+% cID = 'ARG';
+cID = 'BOL';
 year     = 2015;
 month    = 1;
 D        = datetime(year,month,01,'Format','yyyy.MM.dd');
@@ -61,7 +70,7 @@ Tdata(find(Tdata<0)) = NaN;
 % end
 
 %% get GCM grid for specific country
-Grid = getGMCgrid('ARG', 0);
+Grid = getGMCgrid(cID, 0);
 newLat = Grid.Country.latcc;
 newLon = Grid.Country.longcc;
 [X,Y]  = meshgrid(newLon,newLat);
@@ -77,40 +86,62 @@ for k = 1
     % get grid and values for current month
     oldLat = Lat(yearInd);
     oldLon = Lon(yearInd);
-%     [x,y]  = meshgrid(oldLon,oldLat);
-    
-    p      = Pdata(yearInd);
-    t      = Tdata(yearInd);
+
+    % get data values
+    p = Pdata(yearInd);
+    t = Tdata(yearInd);
 
     figure(1),
     scatter(oldLon,oldLat,20,t,'s', 'filled')
     title('temp data');
     
-    % do some exprapolation/ interpolation
-    Fp = scatteredInterpolant(oldLon,oldLat,p);
+    % Interpolate and extrapolate data to GCM grid. Currently using discontinuous
+    % nearest neighbour interpolation and extrapolation
+    % NOTE: linear and natural interpolation introduces wild values.
+    % Nearest keeps the range within the original data value range. Need to
+    % smoothe when stitching all country tiles together later. (Domain
+    % decoposition problem essentially)
+    
+    
+    Fp = scatteredInterpolant(oldLon,oldLat,p,'nearest','nearest');
     pGCM = Fp(X,Y);
-    Ft = scatteredInterpolant(oldLon,oldLat,t);
+    Ft = scatteredInterpolant(oldLon,oldLat,t,'nearest','nearest');
     tGCM = Ft(X,Y);
 
        
 end
-%%
-figure(2);plot(t)
-figure(3);plot(tGCM(:))
-%%
 
+%% Plots
 figure(4),clf
+subplot(1,2,1)
 imagesc(newLon, newLat,tGCM)
 axis equal
 set(gca,'YDir','normal')
 bb = Grid.BoundingBox;
 axis([bb(1,1) bb(2,1) bb(1,2) bb(2,2)])
-
+colorbar
 
 hold on
 scatter(oldLon,oldLat,20,t,'s','filled')
 scatter(oldLon,oldLat,21,'ks')
 title('GCM temp data');
+    
+[la,lo] = borders('argentina');
+scatter(lo,la,2,'ko','filled')
+
+%
+subplot(1,2,2)
+imagesc(newLon, newLat,pGCM)
+axis equal
+set(gca,'YDir','normal')
+bb = Grid.BoundingBox;
+axis([bb(1,1) bb(2,1) bb(1,2) bb(2,2)])
+colorbar
+
+hold on
+scatter(oldLon,oldLat,20,p,'s','filled')
+scatter(oldLon,oldLat,21,'ks')
+title('GCM precipitation data');
     
 [la,lo] = borders('argentina');
 scatter(lo,la,2,'ko','filled')
