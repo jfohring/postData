@@ -43,12 +43,8 @@ Pdata = T.data(:,38);
 Tdata = T.data(:,50);
 
 % remove negative values
-indP = find(Pdata<0);
-indT = find(Tdata<0);
-
-
-Pdata(indP) = 0;
-Tdata(indT) = 0;
+Pdata(find(Pdata<0)) = 0;
+Tdata(find(Tdata<0)) = 0;
 
 %% look at data set for each year
 for k = 1:12
@@ -56,21 +52,50 @@ for k = 1:12
     d  = yyyymmdd(D);
     yearInd = find(T.data(:,4) == d);
     
-    figure(1), hold all
+    figure(2), hold all
     plot(Pdata(yearInd),'s-')
     title(['Precip data (mm). n stations = ',num2str(length(yearInd))])
-    figure(2), hold all
+    figure(3), hold all
     plot(Tdata(yearInd),'o-')
     title('temp data (C)')
 end
 
-
 %% get GCM grid for specific country
 Grid = getGMCgrid('ARG', 0);
+newLat = Grid.Country.latcc;
+newLon = Grid.Country.longcc;
+[X,Y]  = meshgrid(newLon,newLat);
+
 
 %% interpolate data to argentina grid for 12 months
 
+for k = 1
+    D = datetime(year,k,01,'Format','yyyy.MM.dd');
+    d  = yyyymmdd(D);
+    yearInd = find(T.data(:,4) == d);
+    
+    % get grid and values for current month
+    oldLat = Lat(yearInd);
+    oldLon = Lon(yearInd);
+%     [x,y]  = meshgrid(oldLon,oldLat);
+    
+    p      = Pdata(yearInd);
+    t      = Tdata(yearInd);
 
+    figure(1),
+    scatter(oldLon,oldLat,20,t,'s', 'filled')
+    title('precipdata');
+    
+    % do some exprapolation/ interpolation
+    Fp = scatteredInterpolant(oldLon,oldLat,p);
+    pGCM = Fp(X,Y);
+    Ft = scatteredInterpolant(oldLon,oldLat,t);
+    tGCM = Ft(X,Y);
+
+    
+%     figure(4),imagesc(tGCM')
+%     axes('reverse')
+end
 
 
 
