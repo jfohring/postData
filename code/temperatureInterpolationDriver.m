@@ -15,7 +15,9 @@ close all
  
 % this is just for plotting country borders using the borders function
 country  = 'PuertoRico';
-%  country  = 'Bolivia';
+
+% country = 'Argentina';
+% country  = 'Bolivia';
 % country  = 'Brazil';
 
 % ******Make sure the temperature .csv data file is sorted by DATE and that any 'unknown' values
@@ -30,9 +32,9 @@ filename = 'PuertoRico_2015.csv';
 
 % ADM country ID (you can get this just by looking in the ADM country
 % folder (it's just so the getGCM grid function opens the correct file
-
+cID = 'PRI';
 % cID = 'ARG';
-%  cID = 'BOL';
+% cID = 'BOL';
 % cID = 'BRA';
 
 year     = 2015;
@@ -61,8 +63,12 @@ Lon   = T.data(:,3);
 dates = T.data(:,4);
 
 % want (TPCP (total precipitation amout per month, mm)) and (MNTM (mean temp C))
-colP = 38; % TPCP
-colT = 50; % MNTM
+% colP = 38; % TPCP
+% colT = 50; % MNTM
+% For Puerto Rico, Precipitation and Temp are in different columns (not
+% form same NOAA download)
+colP = 7; % TPCP
+colT = 5; % MNTM
 
 Pdata = T.data(:,colP);
 Tdata = T.data(:,colT);
