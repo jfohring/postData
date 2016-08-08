@@ -14,23 +14,25 @@ close all
 % for more information on Global administrative areas
  
 % this is just for plotting country borders using the borders function
-country  = 'Argentina';
- country  = 'Bolivia';
+country  = 'PuertoRico';
+%  country  = 'Bolivia';
 % country  = 'Brazil';
 
 % ******Make sure the temperature .csv data file is sorted by DATE and that any 'unknown' values
 % in the spreadsheet are replaced with NaN. If not, the importdata function
 % will freak out. 
 
- filename = 'Argentina_2015.csv';
- filename = 'Bolivia_2015.csv';
+filename = 'PuertoRico_2015.csv';
+
+%  filename = 'Argentina_2015.csv';
+%  filename = 'Bolivia_2015.csv';
 %  filename = 'Brazil_2015.csv';
 
 % ADM country ID (you can get this just by looking in the ADM country
 % folder (it's just so the getGCM grid function opens the correct file
 
-cID = 'ARG';
- cID = 'BOL';
+% cID = 'ARG';
+%  cID = 'BOL';
 % cID = 'BRA';
 
 year     = 2015;
