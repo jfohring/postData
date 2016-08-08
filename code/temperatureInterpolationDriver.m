@@ -73,7 +73,8 @@ colT = 5; % MNTM
 Pdata = T.data(:,colP);
 Tdata = T.data(:,colT);
 
-% remove negative values (this potentially could be done in excel too)
+% remove missing values (this potentially could be done in excel too)
+% (-9999)
 Pdata(find(Pdata<0)) = NaN;
 Tdata(find(Tdata<0)) = NaN;
 
@@ -147,7 +148,7 @@ Table = table(Lat,Long,DATES,PDATA,TDATA);
 % get the directory to ZikaData folder on your computer and generate path
 % to folder for saving
 dir = fullfile(pwd);
-pathname = [dir filesep  'Data\combined_data\South_America'];
+pathname = [dir filesep  'Data\combined_data\Central_America'];
 
 % add the file name
 csvfile = fullfile(pathname, ['GCM_' country '_' num2str(year) '.csv']);
@@ -169,7 +170,9 @@ hold on
 scatter(oldLon,oldLat,20,t,'s','filled')
 scatter(oldLon,oldLat,21,'ks')
 title('GCM temp data');
-    
+
+
+country = 'Puerto Rico';
 [la,lo] = borders(country);
 scatter(lo,la,2,'ko','filled')
 
