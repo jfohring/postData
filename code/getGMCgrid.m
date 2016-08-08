@@ -2,6 +2,11 @@ function [Grid] = getGMCgrid(country, admin)
 % function [Grid] = getGMCgrid(country, admin)
 % generate the GCM grid with top left pixel corner lat 90, long -180
 % degrees with 0.05 degree pixel length (~5600m x 5600m). J.Fohring 2016
+
+
+
+
+
 % -----------------------------------------------------------
 % ISO code for country should be a string.
 % Admin level is numberic
