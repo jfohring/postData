@@ -56,12 +56,6 @@ headerlinesIn = 1;
 
 T = importdata(filename,delimiterIn); 
 
-% number of stations
-nstat = sum(T.data(:,4)== d);
-Lat   = T.data(:,2);
-Lon   = T.data(:,3);
-dates = T.data(:,4);
-
 % want (TPCP (total precipitation amout per month, mm)) and (MNTM (mean temp C))
 % colP = 38; % TPCP
 % colT = 50; % MNTM
@@ -70,13 +64,31 @@ dates = T.data(:,4);
 colP = 7; % TPCP
 colT = 5; % MNTM
 
+% remove missing data from whole data set
+[rp,cp] = find(T.data(:,colP) == -9999);
+[rt,ct] = find(T.data(:,colT) == -9999);
+
+Pdata(inp) = [];
+Tdata(int) = [];
+
+% number of stations
+nstat = sum(T.data(:,4)== d);
+Lat   = T.data(:,1);
+Lon   = T.data(:,2);
+dates = T.data(:,4);
+
+
+
+
 Pdata = T.data(:,colP);
 Tdata = T.data(:,colT);
 
 % remove missing values (this potentially could be done in excel too)
 % (-9999)
-Pdata(find(Pdata<0)) = NaN;
-Tdata(find(Tdata<0)) = NaN;
+inp = find(Pdata == -9999);
+int = find(Tdata == -9999);
+Pdata(inp) = [];
+Tdata(int) = [];
 
 %% look at data set for each year
 % for k = 1:12
@@ -112,12 +124,12 @@ for k = 1:12
     oldLat = Lat(yearInd);
     oldLon = Lon(yearInd);
 
-    % get data values
+    % get data values for month
     p = Pdata(yearInd);
     t = Tdata(yearInd);
 
     figure(1),
-    scatter(oldLon,oldLat,20,t,'s', 'filled')
+    scatter(oldLon,oldLat,30,t,'s', 'filled')
     title('temp data');
     
     % Interpolate and extrapolate data to GCM grid. Currently using discontinuous
@@ -128,9 +140,9 @@ for k = 1:12
     % decoposition problem essentially)
     
     
-    Fp = scatteredInterpolant(oldLon,oldLat,p,'nearest','nearest');
+    Fp = scatteredInterpolant(oldLon,oldLat,p,'nearest');
     pGCM = Fp(X,Y);
-    Ft = scatteredInterpolant(oldLon,oldLat,t,'nearest','nearest');
+    Ft = scatteredInterpolant(oldLon,oldLat,t,'linear');
     tGCM = Ft(X,Y);
     
     % store in big vector for each month
@@ -138,24 +150,6 @@ for k = 1:12
     TDATA = [TDATA; tGCM(:)];
     DATES = [DATES; d*ones(length(pGCM(:)),1)];
 end
-
-%% Make table for csv file
-Long = X(:)*ones(1,12); Long = Long(:);
-Lat = Y(:)*ones(1,12);  Lat  = Lat(:);
-
-Table = table(Lat,Long,DATES,PDATA,TDATA);
-
-% get the directory to ZikaData folder on your computer and generate path
-% to folder for saving
-dir = fullfile(pwd);
-pathname = [dir filesep  'Data\combined_data\Central_America'];
-
-% add the file name
-csvfile = fullfile(pathname, ['GCM_' country '_' num2str(year) '.csv']);
-
-writetable(Table,csvfile);
-
-
 %% Plots
 figure(4),clf
 subplot(1,2,1)
@@ -174,7 +168,8 @@ title('GCM temp data');
 
 country = 'Puerto Rico';
 [la,lo] = borders(country);
-scatter(lo,la,2,'ko','filled')
+borders(country,'NoMappingToolbox')
+% scatter(lo,la,8,'ko','filled')
 
 %
 subplot(1,2,2)
@@ -193,3 +188,20 @@ title('GCM precipitation data');
 [la,lo] = borders(country);
 scatter(lo,la,2,'ko','filled')
 %
+%% Make table for csv file
+Long = X(:)*ones(1,12); Long = Long(:);
+Lat = Y(:)*ones(1,12);  Lat  = Lat(:);
+
+Table = table(Lat,Long,DATES,PDATA,TDATA);
+
+% get the directory to ZikaData folder on your computer and generate path
+% to folder for saving
+dir = fullfile(pwd);
+pathname = [dir filesep  'Data\combined_data\Central_America'];
+
+% add the file name
+csvfile = fullfile(pathname, ['GCM_' country '_' num2str(year) '.csv']);
+
+writetable(Table,csvfile);
+
+
