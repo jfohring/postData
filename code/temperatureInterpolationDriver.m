@@ -4,37 +4,39 @@
  
  % you will need to have the global administrative shape file for at
  % minimum level 0 to get bounding boxes for a specific country.
+ % These can be downloaded by country here http://www.gadm.org/
  
-clear
-clc
-close all
+clear                   % clear workspace
+clc                     % clear command window
+close all               % close all figures
 
 %% import temp station locations for a specific country. 
-% Need also the coundtry ID see http://www.gadm.org/, https://en.wikipedia.org/wiki/GADM
-% for more information on Global administrative areas
+% You will also need the coundtry ID see http://www.gadm.org/, https://en.wikipedia.org/wiki/GADM
+% for more information on Global administrative areas. Just look at the
+% admin areas file names for the country
  
 % this is just for plotting country borders using the borders function
-% country  = 'Puerto Rico';
+country  = 'Puerto Rico';
 
 % country = 'Argentina';
-country  = 'Bolivia';
+% country  = 'Bolivia';
 % country  = 'Brazil';
 
 % ******Make sure the temperature .csv data file is sorted by DATE and that any 'unknown' values
-% in the spreadsheet are replaced with NaN. If not, the importdata function
-% will freak out. 
+% in the spreadsheet are replaced with -9999. 
 
-% filename = 'PuertoRico_2015.csv';
+filename = 'PuertoRico_2015.csv';
 
 %  filename = 'Argentina_2015.csv';
- filename = 'Bolivia_2015.csv';
+%  filename = 'Bolivia_2015.csv';
 %  filename = 'Brazil_2015.csv';
 
 % ADM country ID (you can get this just by looking in the ADM country
 % folder (it's just so the getGCM grid function opens the correct file
+
 cID = 'PRI';
-cID = 'ARG';
-cID = 'BOL';
+% cID = 'ARG';
+% cID = 'BOL';
 % cID = 'BRA';
 
 year     = 2015;
@@ -57,24 +59,25 @@ headerlinesIn = 1;
 T = importdata(filename,delimiterIn); 
 
 % want (TPCP (total precipitation amout per month, mm)) and (MNTM (mean temp C))
-colP = 38; % TPCP
-colT = 50; % MNTM
+% colP = 38; % TPCP
+% colT = 50; % MNTM
+
 % number of stations (NOAA files)
-nstat = sum(T.data(:,4)== d);
-Lat   = T.data(:,2);
-Lon   = T.data(:,3);
-dates = T.data(:,4);
+% nstat = sum(T.data(:,4)== d);
+% Lat   = T.data(:,2);
+% Lon   = T.data(:,3);
+% dates = T.data(:,4);
 
 % %******For Puerto Rico, Precipitation and Temp are in different columns (not
 % form same NOAA files)
-% colP = 7; % TPCP
-% colT = 5; % MNTM
+colP = 7; % TPCP
+colT = 5; % MNTM
  
 % % number of stations (Puerto Rico)
-% nstat = sum(T.data(:,4)== d);
-% Lat   = T.data(:,1);
-% Lon   = T.data(:,2);
-% dates = T.data(:,4);
+nstat = sum(T.data(:,4)== d);
+Lat   = T.data(:,1);
+Lon   = T.data(:,2);
+dates = T.data(:,4);
 
 
 Pdata = T.data(:,colP);
