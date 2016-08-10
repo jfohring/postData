@@ -14,27 +14,27 @@ close all
 % for more information on Global administrative areas
  
 % this is just for plotting country borders using the borders function
-country  = 'PuertoRico';
+% country  = 'Puerto Rico';
 
 % country = 'Argentina';
-% country  = 'Bolivia';
+country  = 'Bolivia';
 % country  = 'Brazil';
 
 % ******Make sure the temperature .csv data file is sorted by DATE and that any 'unknown' values
 % in the spreadsheet are replaced with NaN. If not, the importdata function
 % will freak out. 
 
-filename = 'PuertoRico_2015.csv';
+% filename = 'PuertoRico_2015.csv';
 
 %  filename = 'Argentina_2015.csv';
-%  filename = 'Bolivia_2015.csv';
+ filename = 'Bolivia_2015.csv';
 %  filename = 'Brazil_2015.csv';
 
 % ADM country ID (you can get this just by looking in the ADM country
 % folder (it's just so the getGCM grid function opens the correct file
 cID = 'PRI';
-% cID = 'ARG';
-% cID = 'BOL';
+cID = 'ARG';
+cID = 'BOL';
 % cID = 'BRA';
 
 year     = 2015;
@@ -57,25 +57,24 @@ headerlinesIn = 1;
 T = importdata(filename,delimiterIn); 
 
 % want (TPCP (total precipitation amout per month, mm)) and (MNTM (mean temp C))
-% colP = 38; % TPCP
-% colT = 50; % MNTM
-% For Puerto Rico, Precipitation and Temp are in different columns (not
-% form same NOAA download)
-colP = 7; % TPCP
-colT = 5; % MNTM
-
-% remove missing data from whole data set
-% [rp,cp] = find(T.data(:,colP) == -9999);
-% [rt,ct] = find(T.data(:,colT) == -9999);
-% 
-% Pdata(inp) = [];
-% Tdata(int) = [];
-
-% number of stations
+colP = 38; % TPCP
+colT = 50; % MNTM
+% number of stations (NOAA files)
 nstat = sum(T.data(:,4)== d);
-Lat   = T.data(:,1);
-Lon   = T.data(:,2);
+Lat   = T.data(:,2);
+Lon   = T.data(:,3);
 dates = T.data(:,4);
+
+% %******For Puerto Rico, Precipitation and Temp are in different columns (not
+% form same NOAA files)
+% colP = 7; % TPCP
+% colT = 5; % MNTM
+ 
+% % number of stations (Puerto Rico)
+% nstat = sum(T.data(:,4)== d);
+% Lat   = T.data(:,1);
+% Lon   = T.data(:,2);
+% dates = T.data(:,4);
 
 
 Pdata = T.data(:,colP);
@@ -108,7 +107,7 @@ PDATA = [];
 TDATA = [];
 DATES = [];
 
-for k = 3
+for k = 1
     D = datetime(year,k,01,'Format','yyyy.MM.dd');
     d  = yyyymmdd(D);
     yearInd = find(T.data(:,4) == d);
@@ -173,7 +172,7 @@ scatter(oldLont,oldLatt,21,'ks')
 title('GCM temp data');
 
 
-country = 'Puerto Rico';
+
 [la,lo] = borders(country);
 borders(country,'k','NoMappingToolbox')
 % scatter(lo,la,8,'ko','filled')
