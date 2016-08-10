@@ -1,7 +1,7 @@
-function [Grid] = getGMCgrid(country, admin)
-% function [Grid] = getGMCgrid(country, admin)
+function [Grid] = getGMCgrid(country, admin,n)
+% function [Grid] = getGMCgrid(country, admin,n)
 % generate the GCM grid with top left pixel corner lat 90, long -180
-% degrees with 0.05 degree pixel length (~5600m x 5600m). J.Fohring 2016
+% degrees with n degree pixel length (~5600m x 5600m). J.Fohring 2016
 
 
 
@@ -14,7 +14,8 @@ function [Grid] = getGMCgrid(country, admin)
 %          admin = numberic value (0,1,2,3..) for administrative area level
 %                    0: country border
 %                    1: provincial borders
-%___________________________________________________________
+%              n = degree spaceing / grid resolution
+%__________________________________________________________
 filename = [country '_adm' num2str(admin) '.shp'];
 
 % read shape file for specific country and admin level
@@ -25,11 +26,11 @@ bbox = S.BoundingBox; % [min x min y; max x max y] [min long, min lat; max long,
 
 
 % extract regional mesh from big GCM mesh
-Grid.World.lat  = -90:0.05:90;
-Grid.World.long = -180: 0.05: 180;
+Grid.World.lat  = -90:n:90;
+Grid.World.long = -180: n: 180;
 
-Grid.World.latcc  = Grid.World.lat(1:end-1) + 0.025;
-Grid.World.longcc = Grid.World.long(1:end-1) + 0.025;
+Grid.World.latcc  = Grid.World.lat(1:end-1) + n/2;
+Grid.World.longcc = Grid.World.long(1:end-1) + n/2;
 
 % extract cell center points within the bounding box
 ind = find(Grid.World.latcc >= bbox(1,2)  & Grid.World.latcc <= bbox(2,2));
