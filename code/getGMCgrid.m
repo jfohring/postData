@@ -21,8 +21,17 @@ filename = [country '_adm' num2str(admin) '.shp'];
 % read shape file for specific country and admin level
 [S, ~] = shaperead(filename, 'UseGeoCoords',true);
 
-% get the bounding box coordinates
-bbox = S.BoundingBox; % [min x min y; max x max y] [min long, min lat; max long, max lat]
+if admin ~= 0
+        filename = [country '_adm' num2str(0) '.shp'];
+        % read shape file for specific country and admin level
+        [S, ~] = shaperead(filename, 'UseGeoCoords',true);
+        
+        % get the bounding box coordinates
+        bbox = S.BoundingBox; % [min x min y; max x max y] [min long, min lat; max long, max lat]
+else
+        bbox = S.BoundingBox; % [min x min y; max x max y] [min long, min lat; max long, max lat]
+end
+    
 
 
 % extract regional mesh from big GCM mesh
@@ -39,6 +48,15 @@ Grid.Country.latcc = Grid.World.latcc(ind);
 ind = find( Grid.World.longcc >= bbox(1,1)   & Grid.World.longcc <= bbox(2,1));
 Grid.Country.longcc = Grid.World.longcc(ind);
 
+
+% extract corner points within the bounding box
+ind = find(Grid.World.lat >= bbox(1,2)  & Grid.World.lat <= bbox(2,2));
+Grid.Country.lat = Grid.World.lat(ind);
+
+ind = find( Grid.World.long >= bbox(1,1)   & Grid.World.long <= bbox(2,1));
+Grid.Country.long = Grid.World.long(ind);
+
+
 Grid.BoundingBox = bbox;
 
 %% plot for testing
@@ -52,5 +70,15 @@ hold on
 plot(bbox(1,1), bbox(1,2),'r*',bbox(2,1),bbox(1,2),'r*', 'MarkerSize',5)
 plot(bbox(1,1), bbox(2,2),'r*',bbox(2,1),bbox(2,2),'r*', 'MarkerSize',5)
 plot(cent(1), cent(2),'bo', 'MarkerSize',5,'LineWidth',4)
-Grid.Country.longcc = Grid.World.longcc(ind);
+
+% get grid corner values for inside the country bounding box
+x = Grid.Country.long;
+y = Grid.Country.lat;
+
+% plot the grid 
+plot(ones(13,1)*x, (y')*ones(1,60),'k')
+plot((ones(13,1)*x)', ((y')*ones(1,60))','k')
+title(country)
+
+
 
