@@ -7,12 +7,11 @@ clc
 close all
 
 %% define filename, country ID, year, month
-country  = 'Puerto Rico';
 filename = 'CDCDengue.txt';
 cID = 'PRI';
 
 year  = 2015;
-month = 2;
+month = 1;
 D     = datetime(year,month,01,'Format','yyyy.MM.dd');
 d     = yyyymmdd(D);
 D     = char(D,'yyyyMM');
@@ -33,7 +32,7 @@ lon = Lon(Ind);
 
 
 %% get GCM grid for specific country
-Grid   = getGCMgrid(cID, 0,0.05);
+Grid   = getGMCgrid(cID, 0,0.05);
 newLat = Grid.Country.latcc;
 newLon = Grid.Country.longcc;
 [X,Y]  = meshgrid(newLon,newLat);
@@ -43,9 +42,14 @@ newLon = Grid.Country.longcc;
 hold on
 scatter(lon,lat,'go','filled')
 
+x = Grid.Country.long;
+y = Grid.Country.lat;
 
 
-%% assign values to new grid (i fthe occuance is within the cell, that cell gets a value, else its zero
+
+plot(ones(13,1)*x, (y')*ones(1,60),'k')
+
+%% Interpolate to new country grid
 
 
 

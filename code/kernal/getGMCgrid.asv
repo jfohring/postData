@@ -71,14 +71,7 @@ plot(bbox(1,1), bbox(1,2),'r*',bbox(2,1),bbox(1,2),'r*', 'MarkerSize',5)
 plot(bbox(1,1), bbox(2,2),'r*',bbox(2,1),bbox(2,2),'r*', 'MarkerSize',5)
 plot(cent(1), cent(2),'bo', 'MarkerSize',5,'LineWidth',4)
 
-% get grid corner values for inside the country bounding box
-x = Grid.Country.long;
-y = Grid.Country.lat;
-
-% plot the grid 
-plot(ones(13,1)*x, (y')*ones(1,60),'k')
-plot((ones(13,1)*x)', ((y')*ones(1,60))','k')
-title(country)
+Grid.Country.longcc = Grid.World.longcc(ind);
 
 
 

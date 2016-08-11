@@ -100,7 +100,7 @@ Tdata = T.data(:,colT);
 % end
 
 %% get GCM grid for specific country
-Grid = getGMCgrid(cID, 0,0.05);
+Grid = getGCMgrid(cID, 0,0.05);
 newLat = Grid.Country.latcc;
 newLon = Grid.Country.longcc;
 [X,Y]  = meshgrid(newLon,newLat);
