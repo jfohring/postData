@@ -6,14 +6,18 @@ clear
 clc
 close all
 %% Read in Dengue spread sheet
-filename = 'CDCDengue_PR_Mex.csv';
-
-delimiterIn = ','; %  save files as comma separated text files ('\t') for tab separated
-headerlinesIn = 1;
-
-D = importdata(filename,delimiterIn); 
-
-%% Read in Global Admin file for PRI
+filename = 'CDCDengue.txt';
+D = readtable(filename);
 
 
-[S, A] = shaperead('PRI_adm1.shp', 'UseGeoCoords',true);
+lat = table2array(D(:,8));
+Lon = table2array(D(:,9));
+
+year = table2array(D(:,6));
+month = table2array(D(:,7));
+
+
+
+
+
+
