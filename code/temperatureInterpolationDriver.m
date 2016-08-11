@@ -161,6 +161,8 @@ end
 
 %% Plots
 figure(4),clf
+
+% --- SUBPLOT 1 ---
 subplot(2,1,1)
 imagesc(newLon, newLat,tGCM)
 axis equal
@@ -168,19 +170,17 @@ set(gca,'YDir','normal')
 bb = Grid.BoundingBox;
 axis([bb(1,1) bb(2,1) bb(1,2) bb(2,2)])
 
-
 hold on
+plotGCMgrid(Grid,'w')
 scatter(oldLont,oldLatt,20,t,'s','filled')
 scatter(oldLont,oldLatt,21,'ks')
-title('GCM temp data');
+title([country ': interpolated temp data']);
 
-
-
-[la,lo] = borders(country);
 borders(country,'k','NoMappingToolbox')
-% scatter(lo,la,8,'ko','filled')
+xlabel('Longitude (0.05 degree cell length)')
+ylabel ('Latitude (0.05 degree cell length)')
 
-%
+% --- SUBPLOT 2 ---
 subplot(2,1,2)
 imagesc(newLon, newLat,pGCM)
 axis equal
@@ -190,13 +190,15 @@ axis([bb(1,1) bb(2,1) bb(1,2) bb(2,2)])
 
 
 hold on
+plotGCMgrid(Grid,'w')
 scatter(oldLonp,oldLatp,20,p,'s','filled')
 scatter(oldLonp,oldLatp,21,'ks')
-title('GCM precipitation data');
+title([country ': interpolated precipitation data']);
     
 [la,lo] = borders(country);
 borders(country,'k','NoMappingToolbox')
-% scatter(lo,la,2,'ko','filled')
+xlabel('Longitude (0.05 degree cell length)')
+ylabel ('Latitude (0.05 degree cell length)')
 %
 %% Make table for csv file
 % Long = X(:)*ones(1,12); Long = Long(:);
