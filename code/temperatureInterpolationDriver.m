@@ -19,8 +19,8 @@ close all               % close all figures
 country  = 'Puerto Rico';
 
 % country = 'Argentina';
-% country  = 'Bolivia';
-% country  = 'Brazil';
+% country = 'Bolivia';
+% country = 'Brazil';
 
 % ******Make sure the temperature .csv data file is sorted by DATE and that any 'unknown' values
 % in the spreadsheet are replaced with -9999. 
@@ -82,8 +82,6 @@ dates = T.data(:,4);
 
 Pdata = T.data(:,colP);
 Tdata = T.data(:,colT);
-
-
 
 %% look at data set for each year
 % for k = 1:12
@@ -178,7 +176,7 @@ title([country ': interpolated temp data']);
 
 borders(country,'k','NoMappingToolbox')
 xlabel('Longitude (0.05 degree cell length)')
-ylabel ('Latitude (0.05 degree cell length)')
+ylabel ('Latitude ')
 
 % --- SUBPLOT 2 ---
 subplot(2,1,2)
@@ -198,8 +196,9 @@ title([country ': interpolated precipitation data']);
 [la,lo] = borders(country);
 borders(country,'k','NoMappingToolbox')
 xlabel('Longitude (0.05 degree cell length)')
-ylabel ('Latitude (0.05 degree cell length)')
+ylabel ('Latitude ')
 %
+
 %% Make table for csv file
 % Long = X(:)*ones(1,12); Long = Long(:);
 % Lat = Y(:)*ones(1,12);  Lat  = Lat(:);
