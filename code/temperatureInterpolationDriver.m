@@ -1,6 +1,6 @@
  % driver for interpolation of temp and precipitation data to GCM (global
  % climate model) 0.05 degree (5600m x 5600m) grid. (upper left pixel
- % corner is (90,-180) decimal degrees.
+ % corner is (90,-180) decimal degrees. JF 2016
  
  % you will need to have the global administrative shape file for at
  % minimum level 0 to get bounding boxes for a specific country.
@@ -17,7 +17,7 @@ close all               % close all figures
  
 % this is just for plotting country borders using the borders function
 country  = 'Puerto Rico';
-safefilecountry = 'Puerto_Rico';
+
 % country = 'Argentina';
 % country = 'Bolivia';
 % country = 'Brazil';
@@ -39,11 +39,21 @@ cID = 'PRI';
 % cID = 'BOL';
 % cID = 'BRA';
 
-year     = 2015;
-month    = 1;
+year     = 2015; % set the year. Currently we only have data for 2015 for PR
+month    = 1; 
 D        = datetime(year,month,01,'Format','yyyy.MM.dd');
 d        = yyyymmdd(D);
 D        = char(D,'yyyyMM');
+
+%% File paths and names for saving. For Puerto Rico, saving to combined_data\Central_Americal
+% get the directory to ZikaData folder on your computer and generate path
+% to folder for saving
+dir = fullfile(pwd);
+pathname = [dir filesep  'Data\combined_data\Central_America'];
+safefilecountry = 'Puerto_Rico'; % if you want it to be different the 'country' variable above
+
+% add the file name
+csvfile = fullfile(pathname, ['GCM_' safefilecountry '_' num2str(year) '.csv']);
 
 %% extract lat, long, Temp and Precipitaion data sets
 delimiterIn = ','; %  save files as comma separated text files ('\t') for tab separated
@@ -55,10 +65,11 @@ headerlinesIn = 1;
 %   header text data. Since the first 2 columns of the csv files are text,
 %   the headers are shifted 2 columns to the right. In other words elevations
 %   are in colunm 1 of T.data, not column 3 as the csv file would suggest. 
+% Using the Table class might be a better option (haven't tried it yet)
 
 T = importdata(filename,delimiterIn); 
 
-% want (TPCP (total precipitation amout per month, mm)) and (MNTM (mean temp C))
+% NOAA files (TPCP (total precipitation amout per month, mm)) and (MNTM (mean temp C))
 % colP = 38; % TPCP
 % colT = 50; % MNTM
 
@@ -69,16 +80,15 @@ T = importdata(filename,delimiterIn);
 % dates = T.data(:,4);
 
 % %******For Puerto Rico, Precipitation and Temp are in different columns (not
-% form same NOAA files)
+% same form as NOAA files)
 colP = 7; % TPCP
 colT = 5; % MNTM
  
-% % number of stations (Puerto Rico)
+% number of stations (Puerto Rico)
 nstat = sum(T.data(:,4)== d);
 Lat   = T.data(:,1);
 Lon   = T.data(:,2);
 dates = T.data(:,4);
-
 
 Pdata = T.data(:,colP);
 Tdata = T.data(:,colT);
@@ -107,8 +117,9 @@ newLon = Grid.Country.longcc;
 PDATA = [];
 TDATA = [];
 DATES = [];
+nmonths = 12;
 
-for k = 1:12
+for k = 1:nmonths
     D = datetime(year,k,01,'Format','yyyy.MM.dd');
     d  = yyyymmdd(D);
     yearInd = find(T.data(:,4) == d);
@@ -157,7 +168,7 @@ for k = 1:12
     DATES = [DATES; d*ones(length(pGCM(:)),1)];
 end
 
-%% Plot last month computed
+%% Plot interpolated values for last month computed
 figure(4),clf
 D = char(D,'yyyyMM');
 % --- SUBPLOT 1 ---
@@ -200,18 +211,13 @@ ylabel ('Latitude ')
 %
 
 %% Make And Save table for csv file
-Long = X(:)*ones(1,12); Long = Long(:);
-Lat = Y(:)*ones(1,12);  Lat  = Lat(:);
+% file has 5 columns for each pixel in the grid. Latitide, Longitude, date,
+% precipitation (mm), temperature (C)
+
+Long = X(:)*ones(1,nmonths); Long = Long(:);
+Lat  = Y(:)*ones(1,nmonths);  Lat  = Lat(:);
 
 Table = table(Lat,Long,DATES,PDATA,TDATA);
-
-% get the directory to ZikaData folder on your computer and generate path
-% to folder for saving
-dir = fullfile(pwd);
-pathname = [dir filesep  'Data\combined_data\Central_America'];
-
-% add the file name
-csvfile = fullfile(pathname, ['GCM_' safefilecountry '_' num2str(year) '.csv']);
 
 writetable(Table,csvfile);
 
