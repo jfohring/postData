@@ -98,7 +98,7 @@ Tdata = T.data(:,colT);
 % end
 
 %% get GCM grid for specific country
-Grid = getGCMgrid(cID, 0,0.05);
+Grid   = getGCMgrid(cID, 0,0.05);
 newLat = Grid.Country.latcc;
 newLon = Grid.Country.longcc;
 [X,Y]  = meshgrid(newLon,newLat);
@@ -157,9 +157,9 @@ for k = 1
     DATES = [DATES; d*ones(length(pGCM(:)),1)];
 end
 
-%% Plots
+%% Plot last month computed
 figure(4),clf
-
+D = char(D,'yyyyMM');
 % --- SUBPLOT 1 ---
 subplot(2,1,1)
 imagesc(newLon, newLat,tGCM)
@@ -172,7 +172,7 @@ hold on
 plotGCMgrid(Grid,'w')
 scatter(oldLont,oldLatt,20,t,'s','filled')
 scatter(oldLont,oldLatt,21,'ks')
-title([country ': interpolated temp data']);
+title([country ': interpolated monthly temperature data for ',D]);
 
 borders(country,'k','NoMappingToolbox')
 xlabel('Longitude (0.05 degree cell length)')
@@ -191,7 +191,7 @@ hold on
 plotGCMgrid(Grid,'w')
 scatter(oldLonp,oldLatp,20,p,'s','filled')
 scatter(oldLonp,oldLatp,21,'ks')
-title([country ': interpolated precipitation data']);
+title([country ': interpolated monthly precipitation data for ',D]);
     
 [la,lo] = borders(country);
 borders(country,'k','NoMappingToolbox')
@@ -199,20 +199,18 @@ xlabel('Longitude (0.05 degree cell length)')
 ylabel ('Latitude ')
 %
 
-%% Make table for csv file
-% Long = X(:)*ones(1,12); Long = Long(:);
-% Lat = Y(:)*ones(1,12);  Lat  = Lat(:);
-% 
-% Table = table(Lat,Long,DATES,PDATA,TDATA);
-% 
-% % get the directory to ZikaData folder on your computer and generate path
-% % to folder for saving
-% dir = fullfile(pwd);
-% pathname = [dir filesep  'Data\combined_data\Central_America'];
-% 
-% % add the file name
-% csvfile = fullfile(pathname, ['GCM_' country '_' num2str(year) '.csv']);
-% 
-% writetable(Table,csvfile);
-% 
+%% Make And Save table for csv file
+
+Table = table(Lat,Long,DATES,PDATA,TDATA);
+
+% get the directory to ZikaData folder on your computer and generate path
+% to folder for saving
+dir = fullfile(pwd);
+pathname = [dir filesep  'Data\combined_data\Central_America'];
+
+% add the file name
+csvfile = fullfile(pathname, ['GCM_' country '_' num2str(year) '.csv']);
+
+writetable(Table,csvfile);
+
 
