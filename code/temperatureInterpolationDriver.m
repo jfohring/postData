@@ -17,7 +17,7 @@ close all               % close all figures
  
 % this is just for plotting country borders using the borders function
 country  = 'Puerto Rico';
-
+safefilecountry = 'Puerto_Rico';
 % country = 'Argentina';
 % country = 'Bolivia';
 % country = 'Brazil';
@@ -108,7 +108,7 @@ PDATA = [];
 TDATA = [];
 DATES = [];
 
-for k = 1
+for k = 1:12
     D = datetime(year,k,01,'Format','yyyy.MM.dd');
     d  = yyyymmdd(D);
     yearInd = find(T.data(:,4) == d);
@@ -200,6 +200,8 @@ ylabel ('Latitude ')
 %
 
 %% Make And Save table for csv file
+Long = X(:)*ones(1,12); Long = Long(:);
+Lat = Y(:)*ones(1,12);  Lat  = Lat(:);
 
 Table = table(Lat,Long,DATES,PDATA,TDATA);
 
@@ -209,7 +211,7 @@ dir = fullfile(pwd);
 pathname = [dir filesep  'Data\combined_data\Central_America'];
 
 % add the file name
-csvfile = fullfile(pathname, ['GCM_' country '_' num2str(year) '.csv']);
+csvfile = fullfile(pathname, ['GCM_' safefilecountry '_' num2str(year) '.csv']);
 
 writetable(Table,csvfile);
 
