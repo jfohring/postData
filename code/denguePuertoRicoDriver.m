@@ -50,8 +50,10 @@ title(['Dengue case locations. Total cases: ' num2str(nCases)])
  % need to deterine what GCM grid cell xy belongs to and add correct number
  % of Dengue instances then write to corrent file
  
-latE = Grid.Country.lat;  % nodal grid
-lonE = Grid.Country.long; % nodal grid
+latn = Grid.Country.lat;  % nodal grid
+lonn = Grid.Country.long; % nodal grid
+[x,y]  = meshgrid(lonn,latn);
+% xnyn = [x(:),y(:)];
 
  
 
