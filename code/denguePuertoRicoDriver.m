@@ -36,13 +36,11 @@ nCases = length(Ind); % total case per year
 Grid   = getGCMgrid(cID, 0,0.05);
 newLat = Grid.Country.latcc;
 newLon = Grid.Country.longcc;
-[X,Y]  = meshgrid(newLon,newLat);
 
 %% pLot locations on map from getGCMgrid
 hold on
 scatter(lon,lat,'go','filled')
 title(['Dengue case locations. Total cases: ' num2str(nCases)])
-
 
 %% assign values to new grid (if the occuance is within the cell, that cell gets a value, else its zero
  xy = [lon,lat];                            % lat and long of regions
