@@ -1,5 +1,6 @@
-% New file for playing with Dengue Data for Puerto Rico and adding
-% occurances to the new GCM grid
+% New driver for playing with Dengue Data for Puerto Rico and adding
+% occurances to the new GCM grid. Does not overwrite temp dat spreadsheet
+% For now. 
 
 clear
 clc
@@ -80,6 +81,7 @@ for ii = 1:nmonths
      Occur = [Occur;val];
      
 end
+
 %% open Puerto Rico file and add a colunm with the dengue occurences
 % File paths and names for saving. For Puerto Rico, saving to combined_data\Central_Americal
 % get the directory to ZikaData folder on your computer and generate path
