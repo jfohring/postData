@@ -37,7 +37,7 @@
 36,183,"PRI","Puerto Rico",36,"Humacao","PR.HU",NA,"","Municipio","Municipality","",""
 37,183,"PRI","Puerto Rico",37,"Isabela","PR.IS",NA,"","Municipio","Municipality","",""
 38,183,"PRI","Puerto Rico",38,"Jayuya","PR.JY",NA,"","Municipio","Municipality","",""
-39,183,"PRI","Puerto Rico",39,"Juana Díaz","PR.JD",NA,"","Municipio","Municipality","",""
+39,183,"PRI","Puerto Rico",39,"Juana Diaz","PR.JD",NA,"","Municipio","Municipality","",""
 40,183,"PRI","Puerto Rico",40,"Juncos","PR.JC",NA,"","Municipio","Municipality","",""
 41,183,"PRI","Puerto Rico",41,"Lajas","PR.LJ",NA,"","Municipio","Municipality","",""
 42,183,"PRI","Puerto Rico",42,"Lares","PR.LR",NA,"","Municipio","Municipality","",""
