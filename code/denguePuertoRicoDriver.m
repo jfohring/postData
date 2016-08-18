@@ -81,8 +81,28 @@ for ii = 1:nmonths
      
 end
 %% open Puerto Rico file and add a colunm with the dengue occurences
+% File paths and names for saving. For Puerto Rico, saving to combined_data\Central_Americal
+% get the directory to ZikaData folder on your computer and generate path
+% to folder for saving
+dir = fullfile(pwd);
+pathname = [dir filesep  'Data\combined_data\Central_America'];
+safefilecountry = 'Puerto_Rico'; % if you want it to be different the 'country' variable above
 
+% add the file name
+csvfile = fullfile(pathname, ['GCM_' safefilecountry '_' num2str(year)  '.csv']);
  
+% read the existing table
+OldT = readtable(csvfile);
+% add the new data
+newT = [OldT,array2table(Occur)];
+% change the variable name
+
+
+savefile = fullfile(pathname, ['GCM_' safefilecountry '_' num2str(year) '_Dengue'  '.csv']);
+newT.Properties.VariableNames{'Occur'} = 'DengueCases';
+
+writetable(newT, savefile);
+
 
 
 
